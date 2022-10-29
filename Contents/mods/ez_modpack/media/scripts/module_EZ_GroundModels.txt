@@ -1,0 +1,14 @@
+module Base
+{
+    model CigaretteBox_Ground
+    {
+        mesh = WorldItems/CigaretteBox_Ground,
+        texture	= models/CigaretteBox_Texture,
+    }
+
+    model SingleCigarette_Ground
+    {
+        mesh = WorldItems/SingleCigarette_Ground,
+        texture	= models/SingleCigarette_Texture,
+    }
+}

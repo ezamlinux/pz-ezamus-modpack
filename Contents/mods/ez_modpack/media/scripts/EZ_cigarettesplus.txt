@@ -1,0 +1,103 @@
+module EZ_MP
+{
+    imports
+    {
+        Base,
+    }
+    /* ------------------- OVERWRITE DEFAULT ITEM -------------- */
+
+    item EZ_CigaretteSingle
+    {
+        DisplayCategory = Junk,
+        HungerChange = 0,
+        Weight = 0.005,
+        RequireInHandOrInventory = Lighter/Matches,
+        Type = Food,
+        DisplayName = Cigarette,
+        StressChange = -5,
+        Icon = EZ_SingleCigarette,
+        CustomContextMenu = Smoke,
+        CantBeFrozen = TRUE,
+        OnEat = OnEat_Cigarettes,
+        StaticModel = Cigarette,
+        EatType = Cigarettes,
+        WorldStaticModel = SingleCigarette_Ground,
+        CustomEatSound = ,
+    }
+
+    item Cigarettes
+    {
+        DisplayCategory = Junk,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Paquet de Cigarette,
+        Icon = IckySticks,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = CigarettePack_Ground,
+        UseWhileEquipped = FALSE,
+    }
+
+    item EZ_CigaretteCarton
+    {
+        DisplayCategory = Junk,
+        Weight = 1,
+        Type = Normal,
+        DisplayName = Cartouche de cigarette,
+        Icon = EZ_Box,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = CigaretteBox_Ground,
+        UseWhileEquipped = FALSE,
+    }
+
+    /* --------------- MOD RECIPE -----------------*/
+
+    recipe Make Flies Cure
+    {
+        GardeningSprayEmpty,
+        Water=3,
+        EZ_CigaretteSingle=5,
+
+        Result: GardeningSprayCigarettes,
+        Time: 40.0,
+        Category: Farming,
+        NeedToBeLearn: true,
+    }
+
+    recipe Mettre cigarette en paquet
+    {
+        EZ_CigaretteSingle=20,
+
+        Result: Cigarettes,
+        Time: 20.0,
+        Sound: PutItemInBag,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe Ouvrir paquet
+    {
+        Cigarettes,
+
+        Result: EZ_CigaretteSingle=20,
+        Time: 20.0,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe Creer une cartouche de cigarette
+    {
+        Cigarettes=10,
+
+        Result: EZ_CigaretteCarton,
+        Time: 60.0,
+        Sound: PutItemInBag,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe Ouvrir la cartouche
+    {
+        EZ_CigaretteCarton,
+
+        Result: Cigarettes=10,
+        Time: 60.0,
+        CanBeDoneFromFloor: true,
+    }
+}
