@@ -25,18 +25,6 @@ module EZ_MP
         CustomEatSound = ,
     }
 
-    item Cigarettes
-    {
-        DisplayCategory = Junk,
-        Weight = 0.1,
-        Type = Normal,
-        DisplayName = Cigarette Pack,
-        Icon = IckySticks,
-        CantBeFrozen = TRUE,
-        WorldStaticModel = CigarettePack_Ground,
-        UseWhileEquipped = FALSE,
-    }
-
     item EZ_CigaretteCarton
     {
         DisplayCategory = Junk,
@@ -50,18 +38,6 @@ module EZ_MP
     }
 
     /* --------------- MOD RECIPE -----------------*/
-
-    recipe Make Flies Cure
-    {
-        GardeningSprayEmpty,
-        Water=3,
-        EZ_CigaretteSingle=5,
-
-        Result: GardeningSprayCigarettes,
-        Time: 40.0,
-        Category: Farming,
-        NeedToBeLearn: true,
-    }
 
     recipe MakeCigarettePack
     {

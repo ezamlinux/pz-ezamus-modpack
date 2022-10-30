@@ -26,6 +26,21 @@ function EZ_recipe_Process_Kefir(items, result, player)
     player:getInventory():AddItems("EZ_KEFIR.EZ_KefirSeed", 6);
 end
 
+-- regive to player jar when empty
+function Recipe.GetItemTypes.FullJar(scriptItems)
+    scriptItems:addAll(getScriptManager():getItemsTag("FullJar"))
+end
+
+function EZ_recipe_Empty_Jar(items, result, player)
+    player:getInventory():AddItem("Base.JarLid");
+end
+
+
+function EZ_recipe_Process_Cider(items, result, player)
+    player:getInventory():AddItem("Base.EmptyJar");
+    player:getInventory():AddItem("Base.JarLid");
+end
+
 -- --- EVENTS MANAGER ---
 Events.EveryHours.Add(EZ_checkSleepTime);
 -- Events.OnPlayerDeath.Add(EZ_ringTheBell);

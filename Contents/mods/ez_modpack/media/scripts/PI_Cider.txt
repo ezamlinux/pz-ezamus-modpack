@@ -1,0 +1,94 @@
+module PI_CIDER
+{
+    imports
+    {
+        Base,
+    }
+
+    item PI_FilterableCiderJar
+    {
+        DisplayName = PI_FilterableCiderJar,
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 1,
+        Icon = PI_CiderJar,
+        DaysFresh = 5,
+        DaysTotallyRotten = 30,
+        UseWhileEquipped = FALSE,
+        StaticModel = WaterBottle,
+        WorldStaticModel = EmptyJar,
+        CantBeFrozen = TRUE,
+        Tags = FullJar,
+    }
+
+    item PI_CiderJar
+    {
+        DisplayName = PI_CiderJar,
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 1,
+        Icon = PI_CiderJar,
+        DaysFresh = 1,
+        DaysTotallyRotten = 5,
+        ReplaceOnRotten = PI_FilterableCiderJar,
+        UseWhileEquipped = FALSE,
+        StaticModel = WaterBottle,
+        WorldStaticModel = EmptyJar,
+        CantBeFrozen = TRUE,
+        Tags = FullJar,
+    }
+
+    item PI_FilteredCiderBottle
+    {
+        DisplayName = PI_FilteredCiderBottle,
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.8,
+        Icon = Pop_water,
+        FoodType = SoftDrink,
+        EatType = bottle,
+        Packaged = TRUE,
+        ReplaceOnUse = WaterBottleEmpty,
+        DaysFresh = 365,
+        HungerChange = -20,
+        ThirstChange = -30,
+        UnhappyChange = -15,
+        Calories = 410,
+        Carbohydrates = 21,
+        Lipids = 0,
+        Proteins = 1,
+        CustomContextMenu = Drink,
+        CustomEatSound = PZ_DrinkingFromBottle,
+        StaticModel = PopBottle,
+        WorldStaticModel = EmptyPopBottle,
+    }
+
+
+    /* --------------- MOD RECIPE -----------------*/
+
+    recipe MakeCiderJar
+    {
+        Water = 10,
+        Apple = 5,
+        EmptyJar,
+        JarLid,
+
+        CanBeDoneFromFloor: true,
+        Result: PI_CiderJar,
+        Time: 250.0,
+        Category: Cooking,
+        OnGiveXP: Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe FilterCiderJar
+    {
+        PI_FilterableCiderJar,
+        WaterBottleEmpty=1,
+
+        Result: PI_FilteredCiderBottle=1,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: PI_recipe_Process_Cider,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+}

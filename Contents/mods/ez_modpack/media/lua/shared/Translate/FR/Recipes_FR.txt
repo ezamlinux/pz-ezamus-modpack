@@ -4,7 +4,15 @@ Recipe_FR = {
     Recipe_MakeCigaretteCarton = "Creer une cartouche de Cigarette",
     Recipe_OpenCigarettePack = "Ouvrir le paquet",
     Recipe_OpenCigaretteCarton = "Ouvrir la cartouche de Cigarette",
+
     /* Kefir */
     Recipe_MakeKefirJar = "Creer un bocal de Kefir",
     Recipe_FilterKefirJar = "Filtrer le Kefir",
+
+    /* Cidre */
+    Recipe_MakeCiderJar = "Creer un bocal de Cidre",
+    Recipe_FilterCiderJar = "Filtrer le Cidre",
+
+    /* MISC */
+    Recipe_EmptyJar = "Vider le bocal",
 }

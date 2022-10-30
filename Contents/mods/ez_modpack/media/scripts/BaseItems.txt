@@ -1,0 +1,26 @@
+module Base
+{
+    item Cigarettes
+    {
+        DisplayCategory = Junk,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Cigarette Pack,
+        Icon = IckySticks,
+        CantBeFrozen = TRUE,
+        WorldStaticModel = CigarettePack_Ground,
+        UseWhileEquipped = FALSE,
+    }
+
+    recipe Make Flies Cure
+    {
+        GardeningSprayEmpty,
+        Water=3,
+        EZ_CigaretteSingle=5,
+
+        Result: GardeningSprayCigarettes,
+        Time: 40.0,
+        Category: Farming,
+        NeedToBeLearn: true,
+    }
+}

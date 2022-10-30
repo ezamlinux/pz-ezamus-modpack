@@ -10,14 +10,13 @@ module EZ_KEFIR
         DisplayName = EZ_FilterableKefirJar,
         DisplayCategory = Food,
         Type = Food,
-        Weight = 0.8,
+        Weight = 1.8,
         Icon = EZ_KefirJar,
-        DaysFresh = 5,
-        DaysTotallyRotten = 10,
         UseWhileEquipped = FALSE,
         StaticModel = WaterBottle,
         WorldStaticModel = EmptyJar,
         CantBeFrozen = TRUE,
+        Tags = FullJar,
     }
 
     item EZ_KefirJar
@@ -25,7 +24,7 @@ module EZ_KEFIR
         DisplayName = EZ_KefirJar,
         DisplayCategory = Food,
         Type = Food,
-        Weight = 0.8,
+        Weight = 1.8,
         Icon = EZ_KefirJar,
         DaysFresh = 1,
         DaysTotallyRotten = 2,
@@ -34,6 +33,7 @@ module EZ_KEFIR
         StaticModel = WaterBottle,
         WorldStaticModel = EmptyJar,
         CantBeFrozen = TRUE,
+        Tags = FullJar,
     }
 
     item EZ_FilteredKefirBottle
@@ -47,8 +47,8 @@ module EZ_KEFIR
         EatType = bottle,
         Packaged = TRUE,
         ReplaceOnUse = WaterBottleEmpty,
-        DaysFresh = 5,
-        HungerChange = -12,
+        DaysFresh = 15,
+        HungerChange = -10,
         ThirstChange = -35,
         UnhappyChange = -7,
         Calories = 150,
@@ -83,7 +83,7 @@ module EZ_KEFIR
         Water = 20,
         EZ_KefirSeed = 5,
         Lemon,
-        Sugar = 1,
+        [Recipe.GetItemTypes.Sugar];1,
         EmptyJar,
         JarLid,
 
@@ -91,7 +91,7 @@ module EZ_KEFIR
         Result: EZ_KefirJar,
         Time: 150.0,
         Category: Cooking,
-        OnGiveXP: Recipe.OnGiveXP.None,
+        OnGiveXP: Recipe.OnGiveXP.Cooking10,
     }
 
     recipe FilterKefirJar
@@ -103,6 +103,18 @@ module EZ_KEFIR
         Time: 200.0,
         Category: Cooking,
         OnCreate: EZ_recipe_Process_Kefir,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe EmptyJar
+    {
+        [Recipe.GetItemTypes.FullJar],
+
+        CanBeDoneFromFloor: true,
+        Result: EmptyJar,
+        Time: 60.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Empty_Jar,
         OnGiveXP: Recipe.OnGiveXP.None,
     }
 }

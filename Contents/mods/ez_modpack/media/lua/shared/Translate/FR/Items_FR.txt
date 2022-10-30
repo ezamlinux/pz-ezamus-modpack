@@ -2,9 +2,15 @@ Items_FR = {
     /* Cigarette */
     DisplayName_Cigarette_Pack = "Paquet de Cigarette",
     DisplayName_EZ_CigaretteCarton = "Cartouche de Cigarette",
+
     /* Kefir */
     DisplayName_EZ_FilterableKefirJar = "Bocal de Kefir fermentee (Filtrable)",
     DisplayName_EZ_KefirJar = "Bocal de Kefir en fermentation",
-    DisplayName_EZ_FilteredKefirBottle = "Kefir",
+    DisplayName_EZ_FilteredKefirBottle = "Bouteille de Kefir",
     DisplayName_EZ_KefirSeed = "Grain de Kefir",
+
+    /* Cider */
+    DisplayName_PI_FilterableCiderJar = "Bocal de Cidre fermentee (Filtrable)",
+    DisplayName_PI_CiderJar = "Bocal de Cidre en fermentation",
+    DisplayName_PI_FilteredCiderBottle = "Bouteille de Cidre",
 }

@@ -3,11 +3,11 @@ require 'Items/ProceduralDistributions'
 
 ----------- KEFIR -----------
 
-local kefir_seed_rand = 50
+local kefir_seed_rand = 25
 
-local kefir_jar_rand = 10
+local kefir_jar_rand = 5
 
-local kefir_bottle_rand = 10
+local kefir_bottle_rand = 5
 -- kefir Grain
 table.insert(ProceduralDistributions.list["KitchenRandom"]["junk"].items, "EZ_KEFIR.EZ_KefirSeed");
 table.insert(ProceduralDistributions.list["KitchenRandom"]["junk"].items, kefir_seed_rand/2);
