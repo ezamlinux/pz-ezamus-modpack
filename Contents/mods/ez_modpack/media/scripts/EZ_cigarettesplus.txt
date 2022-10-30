@@ -30,7 +30,7 @@ module EZ_MP
         DisplayCategory = Junk,
         Weight = 0.1,
         Type = Normal,
-        DisplayName = Paquet de Cigarette,
+        DisplayName = Cigarette Pack,
         Icon = IckySticks,
         CantBeFrozen = TRUE,
         WorldStaticModel = CigarettePack_Ground,
@@ -42,7 +42,7 @@ module EZ_MP
         DisplayCategory = Junk,
         Weight = 1,
         Type = Normal,
-        DisplayName = Cartouche de cigarette,
+        DisplayName = EZ_CigaretteCarton,
         Icon = EZ_Box,
         CantBeFrozen = TRUE,
         WorldStaticModel = CigaretteBox_Ground,
@@ -63,7 +63,7 @@ module EZ_MP
         NeedToBeLearn: true,
     }
 
-    recipe Mettre cigarette en paquet
+    recipe MakeCigarettePack
     {
         EZ_CigaretteSingle=20,
 
@@ -73,7 +73,7 @@ module EZ_MP
         CanBeDoneFromFloor: true,
     }
 
-    recipe Ouvrir paquet
+    recipe OpenCigarettePack
     {
         Cigarettes,
 
@@ -82,7 +82,7 @@ module EZ_MP
         CanBeDoneFromFloor: true,
     }
 
-    recipe Creer une cartouche de cigarette
+    recipe MakeCigaretteCarton
     {
         Cigarettes=10,
 
@@ -92,7 +92,7 @@ module EZ_MP
         CanBeDoneFromFloor: true,
     }
 
-    recipe Ouvrir la cartouche
+    recipe OpenCigaretteCarton
     {
         EZ_CigaretteCarton,
 

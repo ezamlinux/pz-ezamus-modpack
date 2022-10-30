@@ -1,0 +1,10 @@
+Items_EN = {
+    /* Cigarette */
+    DisplayName_Cigarette_Pack = "Cigarette Pack",
+    DisplayName_EZ_CigaretteCarton = "Cigarette Carton",
+    /* Kefir */
+    DisplayName_EZ_FilterableKefirJar = "Fermented Kefir Jar (Filterable)",
+    DisplayName_EZ_KefirJar = "Unfermented Kefir Jar",
+    DisplayName_EZ_FilteredKefirBottle = "Kefir",
+    DisplayName_EZ_KefirSeed = "Kefir Seed",
+}

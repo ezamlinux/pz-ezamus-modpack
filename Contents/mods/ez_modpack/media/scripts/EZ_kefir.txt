@@ -7,7 +7,7 @@ module EZ_KEFIR
 
     item EZ_FilterableKefirJar
     {
-        DisplayName = Fermented Kefir Bottle (Filterable),
+        DisplayName = EZ_FilterableKefirJar,
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.8,
@@ -22,7 +22,7 @@ module EZ_KEFIR
 
     item EZ_KefirJar
     {
-        DisplayName = Unfermented Kefir Bottle,
+        DisplayName = EZ_KefirJar,
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.8,
@@ -38,7 +38,7 @@ module EZ_KEFIR
 
     item EZ_FilteredKefirBottle
     {
-        DisplayName = Kefir Bottle,
+        DisplayName = EZ_FilteredKefirBottle,
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.8,
@@ -63,7 +63,7 @@ module EZ_KEFIR
 
     item EZ_KefirSeed
     {
-        DisplayName = Kefir Seed,
+        DisplayName = EZ_KefirSeed,
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.1,
@@ -78,12 +78,12 @@ module EZ_KEFIR
 
     /* --------------- MOD RECIPE -----------------*/
 
-    recipe Make Kefir Jar
+    recipe MakeKefirJar
     {
-        Water=20,
-        EZ_KefirSeed=5,
+        Water = 20,
+        EZ_KefirSeed = 5,
         Lemon,
-        Sugar=1,
+        Sugar = 1,
         EmptyJar,
         JarLid,
 
@@ -94,7 +94,7 @@ module EZ_KEFIR
         OnGiveXP: Recipe.OnGiveXP.None,
     }
 
-    recipe Filter Kefir
+    recipe FilterKefirJar
     {
         EZ_FilterableKefirJar,
         WaterBottleEmpty=2,

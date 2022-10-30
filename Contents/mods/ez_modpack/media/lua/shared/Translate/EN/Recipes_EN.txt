@@ -1,0 +1,10 @@
+Recipe_EN = {
+    /* Cigarette */
+    Recipe_MakeCigarettePack = "Make Cigarette Pack",
+    Recipe_MakeCigaretteCarton = "Make Cigarette Carton",
+    Recipe_OpenCigarettePack = "Open Cigarette Pack",
+    Recipe_OpenCigaretteCarton = "Open Cigarette Carton",
+    /* Kefir */
+    Recipe_MakeKefirJar = "Make Kefir Jar",
+    Recipe_FilterKefirJar = "Filter Kefir",
+}
