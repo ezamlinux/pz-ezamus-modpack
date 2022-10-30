@@ -44,11 +44,11 @@ module PI_CIDER
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.8,
-        Icon = Pop_water,
-        FoodType = SoftDrink,
+        Icon = WineFull,
+        FoodType = Bourbon,
         EatType = bottle,
         Packaged = TRUE,
-        ReplaceOnUse = WaterBottleEmpty,
+        ReplaceOnUse = WineEmpty,
         DaysFresh = 365,
         HungerChange = -20,
         ThirstChange = -30,
@@ -59,8 +59,8 @@ module PI_CIDER
         Proteins = 1,
         CustomContextMenu = Drink,
         CustomEatSound = PZ_DrinkingFromBottle,
-        StaticModel = PopBottle,
-        WorldStaticModel = EmptyPopBottle,
+        StaticModel = WhiteWineBottle,
+        WorldStaticModel = WineWhiteGround,
     }
 
 
@@ -83,7 +83,7 @@ module PI_CIDER
     recipe FilterCiderJar
     {
         PI_FilterableCiderJar,
-        WaterBottleEmpty=1,
+        WineEmpty/WineEmpty2,
 
         Result: PI_FilteredCiderBottle=1,
         Time: 200.0,

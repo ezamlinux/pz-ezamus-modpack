@@ -42,7 +42,7 @@ module EZ_KEFIR
         DisplayCategory = Food,
         Type = Food,
         Weight = 0.8,
-        Icon = Pop_water,
+        Icon = WaterBottle_Full,
         FoodType = SoftDrink,
         EatType = bottle,
         Packaged = TRUE,
@@ -54,11 +54,12 @@ module EZ_KEFIR
         Calories = 150,
         Carbohydrates = 50,
         Lipids = 0,
-        Proteins = 0,
+        Proteins = 10,
         CustomContextMenu = Drink,
         CustomEatSound = DrinkingFromBottlePlastic,
-        StaticModel = PopBottle,
-        WorldStaticModel = EmptyPopBottle,
+        StaticModel = WaterBottle,
+        WorldStaticModel = WaterBottleEmpty,
+        ReplaceOnDeplete = WaterBottleEmpty,
     }
 
     item EZ_KefirSeed
@@ -97,8 +98,9 @@ module EZ_KEFIR
     recipe FilterKefirJar
     {
         EZ_FilterableKefirJar,
-        WaterBottleEmpty=2,
+        WaterBottleEmpty/PopBottleEmpty=2,
 
+        CanBeDoneFromFloor: true,
         Result: EZ_FilteredKefirBottle=2,
         Time: 200.0,
         Category: Cooking,
