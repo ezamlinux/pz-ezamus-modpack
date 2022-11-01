@@ -1,4 +1,4 @@
-module Base
+module EZ_MP
 {
     model CigaretteBox_Ground
     {

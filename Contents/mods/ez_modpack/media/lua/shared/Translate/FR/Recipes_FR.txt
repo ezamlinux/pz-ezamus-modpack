@@ -13,6 +13,9 @@ Recipe_FR = {
     Recipe_MakeCiderJar = "Creer un bocal de Cidre",
     Recipe_FilterCiderJar = "Filtrer le Cidre",
 
-    /* MISC */
-    Recipe_EmptyJar = "Vider le bocal",
+    /* Wild Wine */
+    Recipe_MakeWildWineJar = "Creer un bocal de Vin sauvage",
+    Recipe_FilterWildWineJar = "Filtrer le Vin sauvage",
+
+    Recipe_MakeVinegar = "Filtrer le vinaigre",
 }

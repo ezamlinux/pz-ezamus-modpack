@@ -1,10 +1,9 @@
-module EZ_MP
+module EZ_CP
 {
     imports
     {
         Base,
     }
-    /* ------------------- OVERWRITE DEFAULT ITEM -------------- */
 
     item EZ_CigaretteSingle
     {
@@ -28,7 +27,7 @@ module EZ_MP
     item EZ_CigaretteCarton
     {
         DisplayCategory = Junk,
-        Weight = 1,
+        Weight = 0.9,
         Type = Normal,
         DisplayName = EZ_CigaretteCarton,
         Icon = EZ_Box,

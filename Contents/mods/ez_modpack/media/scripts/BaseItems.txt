@@ -1,5 +1,7 @@
 module Base
 {
+    /* ------------------- OVERWRITE DEFAULT ITEM -------------- */
+
     item Cigarettes
     {
         DisplayCategory = Junk,

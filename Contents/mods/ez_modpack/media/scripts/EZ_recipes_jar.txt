@@ -1,0 +1,118 @@
+module EZ_MP
+{
+    imports {
+        Base,
+    }
+
+   /* recipe EmptyJar
+    {
+        [Recipe.GetItemTypes.FullJar],
+
+        CanBeDoneFromFloor: true,
+        Result: EmptyJar,
+        Time: 60.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Empty_Jar,
+        OnGiveXP: Recipe.OnGiveXP.None,
+    }*/
+
+    /* --- KEFIR --- */
+
+    recipe MakeKefirJar
+    {
+        Water = 20,
+        EZ_KefirSeed = 5,
+        Lemon/Lime,
+        [Recipe.GetItemTypes.Sugar];1,
+        EmptyJar,
+        JarLid,
+
+        CanBeDoneFromFloor: true,
+        Result: EZ_KefirJar,
+        Time: 250.0,
+        Category: Cooking,
+        OnGiveXP: Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe FilterKefirJar
+    {
+        EZ_FilterableKefirJar,
+        WaterBottleEmpty/PopBottleEmpty=2,
+
+        CanBeDoneFromFloor: true,
+        Result: EZ_FilteredKefirBottle=2,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Process_Kefir,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
+    /* --- Wild Wine --- */
+
+    recipe MakeWildWineJar
+    {
+        Water = 10,
+        Grapes = 5,
+        EmptyJar,
+        JarLid,
+
+        CanBeDoneFromFloor: true,
+        Result: EZ_WildWineJar,
+        Time: 250.0,
+        Category: Cooking,
+        OnGiveXP: Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe FilterWildWineJar
+    {
+        EZ_FilterableWildWineJar,
+        WineEmpty/WineEmpty2,
+
+        Result: EZ_FilteredWildWineBottle=1,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Process_Jar,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
+    /* --- VINEGAR --- */
+    recipe MakeVinegar
+    {
+        EZ_VinegarJar,
+        BeerEmpty=2,
+
+        Result: Vinegar=2,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Process_Jar,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
+    /* --- Cider --- */
+
+    recipe MakeCiderJar
+    {
+        Water = 10,
+        Apple = 5,
+        EmptyJar,
+        JarLid,
+
+        CanBeDoneFromFloor: true,
+        Result: PI_CiderJar,
+        Time: 250.0,
+        Category: Cooking,
+        OnGiveXP: Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe FilterCiderJar
+    {
+        PI_FilterableCiderJar,
+        WineEmpty/WineEmpty2,
+
+        Result: PI_FilteredCiderBottle=1,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Process_Jar,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+}

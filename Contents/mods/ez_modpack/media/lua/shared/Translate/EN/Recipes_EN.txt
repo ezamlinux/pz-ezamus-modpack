@@ -10,9 +10,12 @@ Recipe_EN = {
     Recipe_FilterKefirJar = "Filter Kefir",
 
     /* Cidre */
-    Recipe_MakeCiderJar = "Creer un bocal de Cidre",
-    Recipe_FilterCiderJar = "Filtrer le Cidre",
+    Recipe_MakeCiderJar = "Make Cider Jar",
+    Recipe_FilterCiderJar = "Filter Cider",
 
-    /* MISC */
-    Recipe_EmptyJar = "Empty Jar",
+    /* Wild Wine */
+    Recipe_MakeWildWineJar = "Make Wild Wine Jar",
+    Recipe_FilterWildWineJar = "Filter Wild Wine",
+
+    Recipe_MakeVinegar = "Filter Vinegar",
 }

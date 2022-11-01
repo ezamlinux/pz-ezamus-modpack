@@ -13,4 +13,11 @@ Items_FR = {
     DisplayName_PI_FilterableCiderJar = "Bocal de Cidre fermentee (Filtrable)",
     DisplayName_PI_CiderJar = "Bocal de Cidre en fermentation",
     DisplayName_PI_FilteredCiderBottle = "Bouteille de Cidre",
+
+    /* Wild Wine */
+    DisplayName_EZ_FilterableWildWineJar = "Bocal de Vin sauvage fermentee (Filtrable)",
+    DisplayName_EZ_WildWineJar = "Bocal de Vin sauvage en fermentatio",
+    DisplayName_EZ_FilteredWildWineBottle = "Bouteille de Vin sauvage",
+
+    DisplayName_EZ_VinegarJar = "Bocal de vinaigre",
 }

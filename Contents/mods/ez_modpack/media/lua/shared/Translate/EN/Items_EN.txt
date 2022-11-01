@@ -14,6 +14,10 @@ Items_EN = {
     DisplayName_PI_CiderJar = "Unfermented Cider Jar",
     DisplayName_PI_FilteredCiderBottle = "Cider Bottle",
 
-    /* MISC */
-    Recipe_EmptyJar = "Empty the jar",
+    /* Wild Wine */
+    DisplayName_EZ_FilterableWildWineJar = "Fermented Wild Wine Jar (Filterable)",
+    DisplayName_EZ_WildWineJar = "Unfermented Wild Wine Jar",
+    DisplayName_EZ_FilteredWildWineBottle = "Wild Wine Bottle",
+
+    DisplayName_EZ_VinegarJar = "Vinegar Jar",
 }

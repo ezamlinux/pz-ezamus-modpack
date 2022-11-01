@@ -1,0 +1,4 @@
+IGUI_FR = {
+    IGUI_PlayerText_ez_sleep = "Il se fait tard, je devrais essayer de dormir",
+    IGUI_PlayerText_ez_death = "Pauvre type ...",
+}
