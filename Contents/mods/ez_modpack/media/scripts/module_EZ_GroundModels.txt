@@ -11,4 +11,32 @@ module EZ_MP
         mesh = WorldItems/SingleCigarette_Ground,
         texture	= models/SingleCigarette_Texture,
     }
+
+    model JarWildWine_Ground
+    {
+        mesh = WorldItems/JarFood,
+        texture = WorldItems/JarFoodRadish,
+        scale = 0.6,
+    }
+
+    model JarCider_Ground
+    {
+        mesh = WorldItems/JarFood,
+        texture = WorldItems/JarFoodTomatoes,
+        scale = 0.6,
+    }
+
+    model JarKefir_Ground
+    {
+        mesh = WorldItems/JarFood,
+        texture = models/JarKefir_Texture,
+        scale = 0.6,
+    }
+
+    model JarVinegar_Ground
+    {
+        mesh = WorldItems/JarFood,
+        texture = models/JarVinegar_Texture,
+        scale = 0.6,
+    }
 }

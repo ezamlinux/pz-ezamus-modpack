@@ -7,6 +7,7 @@ Items_EN = {
     DisplayName_EZ_FilterableKefirJar = "Fermented Kefir Jar (Filterable)",
     DisplayName_EZ_KefirJar = "Unfermented Kefir Jar",
     DisplayName_EZ_FilteredKefirBottle = "Kefir Bottle",
+    DisplayName_EZ_FilteredKefirBleachBottle = "Large Kefir Bottle",
     DisplayName_EZ_KefirSeed = "Kefir Seed",
 
     /* Cider*/

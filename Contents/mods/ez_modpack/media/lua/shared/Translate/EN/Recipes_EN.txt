@@ -8,6 +8,7 @@ Recipe_EN = {
     /* Kefir */
     Recipe_MakeKefirJar = "Make Kefir Jar",
     Recipe_FilterKefirJar = "Filter Kefir",
+    Recipe_FilterKefirJarBleach = "Filter Kefir",
 
     /* Cidre */
     Recipe_MakeCiderJar = "Make Cider Jar",

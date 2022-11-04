@@ -47,6 +47,19 @@ module EZ_MP
         OnGiveXP: Recipe.OnGiveXP.Cooking3,
     }
 
+    recipe FilterKefirJarBleach
+    {
+        EZ_FilterableKefirJar,
+        BleachEmpty,
+
+        CanBeDoneFromFloor: true,
+        Result: EZ_FilteredKefirBleachBottle,
+        Time: 200.0,
+        Category: Cooking,
+        OnCreate: EZ_recipe_Process_Kefir,
+        OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
     /* --- Wild Wine --- */
 
     recipe MakeWildWineJar

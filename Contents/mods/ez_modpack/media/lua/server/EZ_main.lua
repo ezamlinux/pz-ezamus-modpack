@@ -9,19 +9,18 @@ function EZ_checkSleepTime()
     end
 end
 
--- Play Ring Bell on player death to notify other player
-function EZ_ringTheBell(player)
-    local churchBellSound = "church_bell";
+-- Play Church Bell on player death to notify other player
+function EZ_playerDeath(player)
+    local serverPlayer = getPlayer();
 
+    if serverPlayer == nil or serverPlayer:getUsername() == player:getUsername() then
+        return;
+    end
+
+    local churchBellSound = "church_bell";
     local sound = getSoundManager():PlaySound(churchBellSound, false, 0);
     getSoundManager():PlayAsMusic(churchBellSound, sound, false, 0);
     sound:setVolume(0.3);
-    local aPlayer = getPlayer();
-
-    if aPlayer == nil or aPlayer == player then
-        return;
-    end
-    aPlayer:Say(getText("IGUI_PlayerText_ez_death"));
 end
 
 -- regive to player jar & more kefir seed
@@ -49,4 +48,4 @@ end
 
 -- --- EVENTS MANAGER ---
 Events.EveryHours.Add(EZ_checkSleepTime);
-Events.OnPlayerDeath.Add(EZ_ringTheBell);
+Events.OnPlayerDeath.Add(EZ_playerDeath);

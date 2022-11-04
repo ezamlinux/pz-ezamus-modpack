@@ -7,6 +7,7 @@ Items_FR = {
     DisplayName_EZ_FilterableKefirJar = "Bocal de Kefir fermentee (Filtrable)",
     DisplayName_EZ_KefirJar = "Bocal de Kefir en fermentation",
     DisplayName_EZ_FilteredKefirBottle = "Bouteille de Kefir",
+    DisplayName_EZ_FilteredKefirBleachBottle = "Grande bouteille de Kefir",
     DisplayName_EZ_KefirSeed = "Grain de Kefir",
 
     /* Cider */
@@ -16,7 +17,7 @@ Items_FR = {
 
     /* Wild Wine */
     DisplayName_EZ_FilterableWildWineJar = "Bocal de Vin sauvage fermentee (Filtrable)",
-    DisplayName_EZ_WildWineJar = "Bocal de Vin sauvage en fermentatio",
+    DisplayName_EZ_WildWineJar = "Bocal de Vin sauvage en fermentation",
     DisplayName_EZ_FilteredWildWineBottle = "Bouteille de Vin sauvage",
 
     DisplayName_EZ_VinegarJar = "Bocal de vinaigre",
