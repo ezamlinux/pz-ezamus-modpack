@@ -1,0 +1,94 @@
+module EZ_LR
+{
+    imports {
+        Base,
+    }
+
+    /* Twigs Stack */
+
+    recipe MakeTenTwigsStack
+    {
+        Base.Twigs=10,
+        [Recipe.GetItemTypes.CraftLogStack],
+
+        Result: EZ_TwigStacks10,
+        OnCreate: EZ_recipe_CreateStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe MakeTwentyTwigsStack
+    {
+        Base.Twigs=20,
+        [Recipe.GetItemTypes.CraftLogStack],
+
+        Result: EZ_TwigStacks20,
+        OnCreate: EZ_recipe_CreateStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe UnstackTwigs
+    {
+        EZ_TwigStacks10,
+
+        Result: Twigs=10,
+        OnCreate: Recipe.OnCreate.SplitLogStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe UnstackTwigs
+    {
+        EZ_TwigStacks20,
+
+        Result: Twigs=20,
+        OnCreate: Recipe.OnCreate.SplitLogStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    /* Branch Stack */
+
+    recipe MakeFiveBranchStack
+    {
+        Base.TreeBranch=5,
+        [Recipe.GetItemTypes.CraftLogStack]=2,
+
+        Result: EZ_BranchStacks5,
+        OnCreate: EZ_recipe_CreateStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe MakeTenBranchStack
+    {
+        Base.TreeBranch=10,
+        [Recipe.GetItemTypes.CraftLogStack]=2,
+
+        Result: EZ_BranchStacks10,
+        OnCreate: EZ_recipe_CreateStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe UnstackBranch
+    {
+        EZ_BranchStacks5,
+
+        Result: TreeBranch=5,
+        OnCreate: Recipe.OnCreate.SplitLogStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+
+    recipe UnstackBranch
+    {
+        EZ_BranchStacks10,
+
+        Result: TreeBranch=10,
+        OnCreate: Recipe.OnCreate.SplitLogStack,
+        CanBeDoneFromFloor: true,
+        Time: 30.0,
+    }
+}

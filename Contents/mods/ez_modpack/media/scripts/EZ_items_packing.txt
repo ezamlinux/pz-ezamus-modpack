@@ -1,0 +1,47 @@
+module EZ_LR
+{
+    imports
+    {
+        Base,
+    }
+
+    item EZ_TwigStacks10
+    {
+        DisplayCategory = Material,
+        Weight = 0.9,
+        Type = Normal,
+        DisplayName = EZ_TwigStacks10,
+        Icon = Twigs,
+        WorldStaticModel = TwigsStack10_Ground,
+    }
+
+    item EZ_TwigStacks20
+    {
+        DisplayCategory = Material,
+        Weight = 1.5,
+        Type = Normal,
+        DisplayName = EZ_TwigStacks20,
+        Icon = Twigs,
+        WorldStaticModel = TwigsStack20_Ground,
+    }
+
+    item EZ_BranchStacks5
+    {
+        DisplayCategory = Material,
+        Weight = 6,
+        Type = Normal,
+        DisplayName = EZ_BranchStacks5,
+        Icon = Branch,
+        WorldStaticModel = TreeStack5_Ground,
+    }
+
+    item EZ_BranchStacks10
+    {
+        DisplayCategory = Material,
+        Weight = 10,
+        Type = Normal,
+        DisplayName = EZ_BranchStacks10,
+        Icon = Branch,
+        WorldStaticModel = TreeStack10_Ground,
+    }
+}

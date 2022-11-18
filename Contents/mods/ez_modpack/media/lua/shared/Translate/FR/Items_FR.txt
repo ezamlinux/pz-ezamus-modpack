@@ -21,4 +21,9 @@ Items_FR = {
     DisplayName_EZ_FilteredWildWineBottle = "Bouteille de Vin sauvage",
 
     DisplayName_EZ_VinegarJar = "Bocal de vinaigre",
+    DisplayName_EZ_TwigStacks10 = "Petit fagot de brindilles",
+    DisplayName_EZ_TwigStacks20 = "Fagot de brindilles",
+
+    DisplayName_EZ_BranchStacks5 = "Petit fagot de branches",
+    DisplayName_EZ_BranchStacks10 = "Fagot de branches",
 }

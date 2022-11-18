@@ -1,10 +1,10 @@
-module EZ_MP
+module EZ_LR
 {
     imports {
         Base,
     }
 
-   /* recipe EmptyJar
+    recipe EmptyJar
     {
         [Recipe.GetItemTypes.FullJar],
 
@@ -14,7 +14,7 @@ module EZ_MP
         Category: Cooking,
         OnCreate: EZ_recipe_Empty_Jar,
         OnGiveXP: Recipe.OnGiveXP.None,
-    }*/
+    }
 
     /* --- KEFIR --- */
 
@@ -127,5 +127,18 @@ module EZ_MP
         Category: Cooking,
         OnCreate: EZ_recipe_Process_Jar,
         OnGiveXP: Recipe.OnGiveXP.Cooking3,
+    }
+
+     /* BOX OF JARS */
+
+    recipe MakeBoxOfJars
+    {
+        Base.EmptyJar = 6,
+        Base.JarLid = 6,
+
+        CanBeDoneFromFloor: true,
+        Result: BoxOfJars,
+        Time: 15.0,
+        Sound: PutItemInBag,
     }
 }

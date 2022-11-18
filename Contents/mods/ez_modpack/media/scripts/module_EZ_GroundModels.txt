@@ -1,4 +1,4 @@
-module EZ_MP
+module EZ_LR
 {
     model CigaretteBox_Ground
     {
@@ -38,5 +38,33 @@ module EZ_MP
         mesh = WorldItems/JarFood,
         texture = models/JarVinegar_Texture,
         scale = 0.6,
+    }
+
+    model TreeStack5_Ground
+    {
+        mesh = WorldItems/TreeStack5_Ground,
+        texture = WorldItems/TreeBranch,
+        scale = 0.01,
+    }
+
+    model TreeStack10_Ground
+    {
+        mesh = WorldItems/TreeStack10_Ground,
+        texture = WorldItems/TreeBranch,
+        scale = 0.01,
+    }
+
+    model TwigsStack10_Ground
+    {
+        mesh = WorldItems/TwigsStack10_Ground,
+        texture = WorldItems/Twigs,
+        scale = 0.01,
+    }
+
+    model TwigsStack20_Ground
+    {
+        mesh = WorldItems/TwigsStack20_Ground,
+        texture = WorldItems/Twigs,
+        scale = 0.01,
     }
 }

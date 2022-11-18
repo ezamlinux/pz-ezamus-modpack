@@ -1,4 +1,7 @@
 Recipe_EN = {
+    /* MISC */
+    Recipe_EmptyJar = "Empty Jar",
+
     /* Cigarette */
     Recipe_MakeCigarettePack = "Make Cigarette Pack",
     Recipe_MakeCigaretteCarton = "Make Cigarette Carton",
@@ -19,4 +22,19 @@ Recipe_EN = {
     Recipe_FilterWildWineJar = "Filter Wild Wine",
 
     Recipe_MakeVinegar = "Filter Vinegar",
+
+    /* Box of Jars */
+    Recipe_MakeBoxOfJars = "Make Box of Jars",
+
+    /* Twig stack */
+    Recipe_MakeTenTwigsStack = "Make Small Twigs Stack",
+    Recipe_MakeTwentyTwigsStack = "Make Twigs Stack",
+
+    Recipe_UnstackTwigs = "Unstack Twigs",
+
+    /* Branch stack */
+    Recipe_MakeFiveBranchStack = "Make Small Branch Stack",
+    Recipe_MakeTenBranchStack = "Make Branch Stack",
+
+    Recipe_UnstackBranch = "Unstack Branch",
 }

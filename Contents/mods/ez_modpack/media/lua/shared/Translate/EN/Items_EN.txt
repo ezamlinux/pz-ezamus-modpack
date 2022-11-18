@@ -21,4 +21,10 @@ Items_EN = {
     DisplayName_EZ_FilteredWildWineBottle = "Wild Wine Bottle",
 
     DisplayName_EZ_VinegarJar = "Vinegar Jar",
+
+    DisplayName_EZ_TwigStacks10 = "Small Twigs Stack",
+    DisplayName_EZ_TwigStacks20 = "Twigs Stack",
+
+    DisplayName_EZ_BranchStacks5 = "Small Branch Stack",
+    DisplayName_EZ_BranchStacks10 = "Branch Stack",
 }

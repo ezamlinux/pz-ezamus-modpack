@@ -1,4 +1,4 @@
-module EZ_MP
+module EZ_LR
 {
     imports
     {
@@ -111,7 +111,7 @@ module EZ_MP
         DisplayCategory = Food,
         Type = Food,
         Weight = 1,
-        Icon = PI_WildWine,
+        Icon = EZ_WildWine,
         UseWhileEquipped = FALSE,
         StaticModel = CanClosed,
         WorldStaticModel = JarVinegar_Ground,
@@ -125,7 +125,7 @@ module EZ_MP
         DisplayCategory = Food,
         Type = Food,
         Weight = 1,
-        Icon = PI_WildWine,
+        Icon = EZ_WildWine,
         DaysFresh = 10,
         DaysTotallyRotten = 20,
         ReplaceOnRotten = EZ_FilterableVinegarJar,
@@ -142,7 +142,7 @@ module EZ_MP
         DisplayCategory = Food,
         Type = Food,
         Weight = 1,
-        Icon = PI_WildWine,
+        Icon = EZ_WildWine,
         DaysFresh = 5,
         DaysTotallyRotten = 10,
         ReplaceOnRotten = EZ_FilterableWildWineJar,
