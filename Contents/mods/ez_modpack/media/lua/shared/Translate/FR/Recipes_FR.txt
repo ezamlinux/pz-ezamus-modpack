@@ -21,7 +21,7 @@ Recipe_FR = {
     Recipe_MakeWildWineJar = "Creer un bocal de Vin sauvage",
     Recipe_FilterWildWineJar = "Filtrer le Vin sauvage",
 
-    Recipe_MakeVinegar = "Filtrer le vinaigre",
+    Recipe_FilterVinegar = "Filtrer le vinaigre",
 
     /* Box of Jars */
     Recipe_MakeBoxOfJars = "Creer un boite de bocaux",
@@ -30,13 +30,18 @@ Recipe_FR = {
     Recipe_MakeTenTwigsStack = "Creer un petit fagot de brindilles",
     Recipe_MakeTwentyTwigsStack = "Creer un fagot de brindilles",
 
-    Recipe_UnstackTwigs10 = "Delier les Brindilles",
-    Recipe_UnstackTwigs20 = "Delier les Brindilles",
+    Recipe_UnstackTwigs = "Delier les brindilles",
 
     /* Branch stack */
     Recipe_MakeFiveBranchStack = "Creer un petit fagot de branches",
     Recipe_MakeTenBranchStack = "Creer un fagot de branche",
 
-    Recipe_UnstackBranch5 = "Delier les Branches",
-    Recipe_UnstackBranch10 = "Delier les Branches",
+    Recipe_UnstackBranch = "Delier les Branches",
+
+    /* Tailoring */
+    Recipe_MakeSheet = "Creer Drap",
+    Recipe_MakeTwine = "Creer Ficelle",
+
+    /* Weapons */
+    Recipe_MakeBaseballBat = "Creer Batte de baseball"
 }

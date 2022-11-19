@@ -1,0 +1,21 @@
+module EZ_LR
+{
+    imports {
+        Base,
+    }
+
+    recipe MakeBaseballBat {
+        Log,
+        DuctTape=2,
+        keep [Recipe.GetItemTypes.Saw],
+        keep [Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/SharpedStone,
+
+        Result: BaseballBat,
+        Sound:Sawing,
+        Time:150.0,
+        Category: Survivalist,
+        SkillRequired:Woodwork=5;Blunt=2,
+        OnCreate:Recipe.OnCreate.CreateSpear,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+}

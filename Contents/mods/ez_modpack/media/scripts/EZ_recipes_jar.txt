@@ -31,6 +31,7 @@ module EZ_LR
         Result: EZ_KefirJar,
         Time: 250.0,
         Category: Cooking,
+        SkillRequired:Cooking=2,
         OnGiveXP: Recipe.OnGiveXP.Cooking10,
     }
 
@@ -38,6 +39,7 @@ module EZ_LR
     {
         EZ_FilterableKefirJar,
         WaterBottleEmpty/PopBottleEmpty=2,
+        AlcoholRippedSheets,
 
         CanBeDoneFromFloor: true,
         Result: EZ_FilteredKefirBottle=2,
@@ -51,6 +53,7 @@ module EZ_LR
     {
         EZ_FilterableKefirJar,
         BleachEmpty,
+        AlcoholRippedSheets,
 
         CanBeDoneFromFloor: true,
         Result: EZ_FilteredKefirBleachBottle,
@@ -73,6 +76,7 @@ module EZ_LR
         Result: EZ_WildWineJar,
         Time: 250.0,
         Category: Cooking,
+        SkillRequired:Cooking=2,
         OnGiveXP: Recipe.OnGiveXP.Cooking10,
     }
 
@@ -80,6 +84,7 @@ module EZ_LR
     {
         EZ_FilterableWildWineJar,
         WineEmpty/WineEmpty2,
+        AlcoholRippedSheets,
 
         Result: EZ_FilteredWildWineBottle=1,
         Time: 200.0,
@@ -89,14 +94,16 @@ module EZ_LR
     }
 
     /* --- VINEGAR --- */
-    recipe MakeVinegar
+    recipe FilterVinegar
     {
         EZ_VinegarJar,
         BeerEmpty=2,
+        AlcoholRippedSheets,
 
         Result: Vinegar=2,
         Time: 200.0,
         Category: Cooking,
+        SkillRequired:Cooking=2,
         OnCreate: EZ_recipe_Process_Jar,
         OnGiveXP: Recipe.OnGiveXP.Cooking3,
     }
@@ -114,6 +121,7 @@ module EZ_LR
         Result: PI_CiderJar,
         Time: 250.0,
         Category: Cooking,
+        SkillRequired:Cooking=2,
         OnGiveXP: Recipe.OnGiveXP.Cooking10,
     }
 
@@ -121,6 +129,7 @@ module EZ_LR
     {
         PI_FilterableCiderJar,
         WineEmpty/WineEmpty2,
+        AlcoholRippedSheets,
 
         Result: PI_FilteredCiderBottle=1,
         Time: 200.0,

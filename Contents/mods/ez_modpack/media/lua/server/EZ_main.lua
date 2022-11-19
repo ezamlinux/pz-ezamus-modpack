@@ -1,28 +1,3 @@
--- Display a message to tell people to try to sleep
--- function EZ_checkSleepTime()
---     if getGameTime():getHour() % 24 == 22 then
---         local player = getPlayer();
---         if player == nil then
---             return;
---         end
---         player:Say(getText("IGUI_PlayerText_ez_sleep"));
---     end
--- end
-
--- Play Church Bell on player death to notify other player
--- function EZ_playerDeath(player)
---     local serverPlayer = getPlayer();
-
---     if serverPlayer == nil or serverPlayer:getUsername() == player:getUsername() then
---         return;
---     end
-
---     local churchBellSound = "church_bell";
---     local sound = getSoundManager():PlaySound(churchBellSound, false, 0);
---     getSoundManager():PlayAsMusic(churchBellSound, sound, false, 0);
---     sound:setVolume(0.3);
--- end
-
 -- regive to player jar & more kefir seed
 function EZ_recipe_Process_Kefir(items, result, player)
     EZ_recipe_Process_Jar(items, result, player);
@@ -40,10 +15,19 @@ end
 function EZ_recipe_Process_Jar(items, result, player)
     EZ_recipe_Empty_Jar(items, result, player);
     player:getInventory():AddItem("Base.JarLid");
+    player:getInventory():AddItem("Base.RippedSheetsDirty");
 end
 
 function EZ_recipe_Empty_Jar(items, result, player)
     player:getInventory():AddItem("Base.EmptyJar");
+end
+
+function Recipe.OnGiveXP.Tailoring3(recipe, ingredients, result, player)
+    player:getXp():AddXP(Perks.Tailoring, 3);
+end
+
+function Recipe.OnGiveXP.Tailoring10(recipe, ingredients, result, player)
+    player:getXp():AddXP(Perks.Tailoring, 10);
 end
 
 -- save the ropes used
@@ -61,7 +45,3 @@ function EZ_recipe_CreateStack(items, result, player)
     end;
     result:getModData().ropeItems = ropeItems;
 end
-
--- --- EVENTS MANAGER ---
--- Events.EveryHours.Add(EZ_checkSleepTime);
--- Events.OnPlayerDeath.Add(EZ_playerDeath);

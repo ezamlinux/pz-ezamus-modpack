@@ -21,7 +21,7 @@ Recipe_EN = {
     Recipe_MakeWildWineJar = "Make Wild Wine Jar",
     Recipe_FilterWildWineJar = "Filter Wild Wine",
 
-    Recipe_MakeVinegar = "Filter Vinegar",
+    Recipe_FilterVinegar = "Filter Vinegar",
 
     /* Box of Jars */
     Recipe_MakeBoxOfJars = "Make Box of Jars",
@@ -37,4 +37,11 @@ Recipe_EN = {
     Recipe_MakeTenBranchStack = "Make Branch Stack",
 
     Recipe_UnstackBranch = "Unstack Branch",
+
+    /* Tailoring */
+    Recipe_MakeSheet = "Make Sheet",
+    Recipe_MakeTwine = "Make Twine",
+
+    /* Weapons */
+    Recipe_MakeBaseballBat = "Make BaseBall Bat"
 }

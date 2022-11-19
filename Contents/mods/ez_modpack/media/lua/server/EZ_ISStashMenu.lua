@@ -1,4 +1,3 @@
-
 -- Contextual Menu build Stash
 function EZ_ContextMenuBuildStash(player, context, worldobjects, test)
     if test then return; end
