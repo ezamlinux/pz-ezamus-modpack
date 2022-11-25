@@ -25,7 +25,7 @@ module EZ_LR
         Lemon/Lime,
         [Recipe.GetItemTypes.Sugar];1,
         EmptyJar,
-        JarLid,
+        JarLid,z
 
         CanBeDoneFromFloor: true,
         Result: EZ_KefirJar,
@@ -38,7 +38,8 @@ module EZ_LR
     recipe FilterKefirJar
     {
         EZ_FilterableKefirJar,
-        WaterBottleEmpty/PopBottleEmpty=2,
+        WaterBottleEmpty/PopBottleEmpty,
+        WaterBottleEmpty/PopBottleEmpty,
         AlcoholRippedSheets,
 
         CanBeDoneFromFloor: true,

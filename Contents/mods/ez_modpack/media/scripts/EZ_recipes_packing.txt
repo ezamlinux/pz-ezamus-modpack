@@ -53,7 +53,8 @@ module EZ_LR
     recipe MakeFiveBranchStack
     {
         Base.TreeBranch=5,
-        [Recipe.GetItemTypes.CraftLogStack]=2,
+        [Recipe.GetItemTypes.CraftLogStack],
+        [Recipe.GetItemTypes.CraftLogStack],
 
         Result: EZ_BranchStacks5,
         OnCreate: EZ_recipe_CreateStack,
@@ -64,7 +65,8 @@ module EZ_LR
     recipe MakeTenBranchStack
     {
         Base.TreeBranch=10,
-        [Recipe.GetItemTypes.CraftLogStack]=2,
+        [Recipe.GetItemTypes.CraftLogStack],
+        [Recipe.GetItemTypes.CraftLogStack],
 
         Result: EZ_BranchStacks10,
         OnCreate: EZ_recipe_CreateStack,

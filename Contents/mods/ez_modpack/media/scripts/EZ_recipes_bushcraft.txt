@@ -1,0 +1,35 @@
+module EZ_LR
+{
+    imports {
+        Base,
+    }
+
+    recipe MakeCharcoal
+    {
+        RippedSheets/RippedSheetsDirty,
+        Twigs/Pinecone = 2,
+        Log,
+        Water = 10,
+        Dirtbag = 4,
+        Lighter/Matches;1,
+
+        CanBeDoneFromFloor: true,
+        Result: Charcoal,
+        Time: 2000.0,
+        Category: Survivalist,
+        OnGiveXP: Recipe.OnGiveXP.None,
+    }
+
+    recipe MakeSheetPaper
+    {
+        Notebook,
+
+        CanBeDoneFromFloor: true,
+        Result: SheetPaper2=4,
+        Sound:ClothesRipping,
+        AnimNode:RipSheets,
+        Time:100.0,
+        OnGiveXP: Recipe.OnGiveXP.None,
+    }
+
+}

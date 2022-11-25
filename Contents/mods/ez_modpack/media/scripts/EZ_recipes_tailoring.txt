@@ -20,7 +20,9 @@ module EZ_LR
 
     recipe MakeSheet
     {
-        [Recipe.GetItemTypes.RipClothing_Cotton]=3,
+        [Recipe.GetItemTypes.RipClothing_Cotton],
+        [Recipe.GetItemTypes.RipClothing_Cotton],
+        [Recipe.GetItemTypes.RipClothing_Cotton],
         keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
         Thread=10,
 

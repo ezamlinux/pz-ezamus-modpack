@@ -43,5 +43,9 @@ Recipe_FR = {
     Recipe_MakeTwine = "Creer Ficelle",
 
     /* Weapons */
-    Recipe_MakeBaseballBat = "Creer Batte de baseball"
+    Recipe_MakeBaseballBat = "Creer Batte de baseball",
+
+    /* Bushcraft */
+    Recipe_MakeCharcoal = "Creer du Charbon",
+    Recipe_MakeSheetPaper = "Dechirer le Calepin",
 }

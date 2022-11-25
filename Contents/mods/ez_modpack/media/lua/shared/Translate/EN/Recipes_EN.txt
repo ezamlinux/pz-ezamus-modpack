@@ -43,5 +43,9 @@ Recipe_EN = {
     Recipe_MakeTwine = "Make Twine",
 
     /* Weapons */
-    Recipe_MakeBaseballBat = "Make BaseBall Bat"
+    Recipe_MakeBaseballBat = "Make BaseBall Bat",
+
+    /* Bushcraft */
+    Recipe_MakeCharcoal = "Make Charcoal",
+    Recipe_MakeSheetPaper = "Rip Notebook",
 }

@@ -1,4 +1,3 @@
 IGUI_EN = {
-    IGUI_PlayerText_sleep = "It's getting dark, maybe I should sleep till 6 AM",
-    IGUI_PlayerText_death = "Poor guy ...",
+    IGUI_CraftCategory_Tailoring = "Tailoring",
 }
