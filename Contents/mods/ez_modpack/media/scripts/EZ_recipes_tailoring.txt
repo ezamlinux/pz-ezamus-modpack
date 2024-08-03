@@ -1,62 +1,62 @@
 module EZ_LR
 {
-    imports {
-        Base,
-    }
+	imports {
+		Base,
+	}
 
-    recipe MakeSheet
-    {
-        RippedSheets = 6,
-        keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
-        Thread=10,
+	recipe MakeSheet
+	{
+		RippedSheets = 6,
+		keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
+		Thread=10,
 
-        CanBeDoneFromFloor: true,
-        Result: Sheet,
-        Time: 100.0,
-        Category: Tailoring,
-        SkillRequired:Tailoring=3,
-        OnGiveXP:Recipe.OnGiveXP.Tailoring3,
-    }
+		CanBeDoneFromFloor: true,
+		Result: Sheet,
+		Time: 100.0,
+		Category: Tailoring,
+		SkillRequired:Tailoring=3,
+		OnGiveXP:Recipe.OnGiveXP.Tailoring3,
+	}
 
-    recipe MakeSheet
-    {
-        [Recipe.GetItemTypes.RipClothing_Cotton],
-        [Recipe.GetItemTypes.RipClothing_Cotton],
-        [Recipe.GetItemTypes.RipClothing_Cotton],
-        keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
-        Thread=10,
+	recipe MakeSheet
+	{
+		[Recipe.GetItemTypes.RipClothing_Cotton],
+		[Recipe.GetItemTypes.RipClothing_Cotton],
+		[Recipe.GetItemTypes.RipClothing_Cotton],
+		keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
+		Thread=10,
 
-        CanBeDoneFromFloor: true,
-        Result: Sheet,
-        Time: 100.0,
-        Category: Tailoring,
-        SkillRequired:Tailoring=2,
-        OnGiveXP:Recipe.OnGiveXP.Tailoring3,
-    }
+		CanBeDoneFromFloor: true,
+		Result: Sheet,
+		Time: 100.0,
+		Category: Tailoring,
+		SkillRequired:Tailoring=2,
+		OnGiveXP:Recipe.OnGiveXP.Tailoring3,
+	}
 
-    recipe MakeTwine
-    {
-        Thread=20,
-        keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
+	recipe MakeTwine
+	{
+		Thread=20,
+		keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
 
-        CanBeDoneFromFloor: true,
-        Result: Twine,
-        Time: 100.0,
-        Category: Tailoring,
-        SkillRequired:Tailoring=4,
-        OnGiveXP:Recipe.OnGiveXP.Tailoring10,
-    }
+		CanBeDoneFromFloor: true,
+		Result: Twine,
+		Time: 100.0,
+		Category: Tailoring,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Recipe.OnGiveXP.Tailoring10,
+	}
 
-    recipe MakeTwine
-    {
-        [Recipe.GetItemTypes.CraftLogStack],
-        keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
+	recipe MakeTwine
+	{
+		[Recipe.GetItemTypes.CraftLogStack],
+		keep [Recipe.GetItemTypes.SewingNeedle]/KnittingNeedles/SutureNeedle,
 
-        CanBeDoneFromFloor: true,
-        Result: Twine=1,
-        Time: 100.0,
-        Category: Tailoring,
-        SkillRequired:Tailoring=4,
-        OnGiveXP:Recipe.OnGiveXP.Tailoring10,
-    }
+		CanBeDoneFromFloor: true,
+		Result: Twine=1,
+		Time: 100.0,
+		Category: Tailoring,
+		SkillRequired:Tailoring=4,
+		OnGiveXP:Recipe.OnGiveXP.Tailoring10,
+	}
 }

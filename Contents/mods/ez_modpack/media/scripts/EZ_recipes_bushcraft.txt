@@ -1,35 +1,139 @@
 module EZ_LR
 {
-    imports {
-        Base,
-    }
+	imports {
+		Base,
+		Radio,
+	}
 
-    recipe MakeCharcoal
-    {
-        RippedSheets/RippedSheetsDirty,
-        Twigs/Pinecone = 2,
-        Log,
-        Water = 10,
-        Dirtbag = 4,
-        Lighter/Matches;1,
+	recipe MakeCharcoal
+	{
+		RippedSheets/RippedSheetsDirty,
+		Twigs/Pinecone = 2,
+		Log,
+		Water = 10,
+		Dirtbag = 4,
+		Lighter/Matches;1,
 
-        CanBeDoneFromFloor: true,
-        Result: Charcoal,
-        Time: 2000.0,
-        Category: Survivalist,
-        OnGiveXP: Recipe.OnGiveXP.None,
-    }
+		CanBeDoneFromFloor: true,
+		Result: Charcoal,
+		Time: 2000.0,
+		Category: Survivalist,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
 
-    recipe MakeSheetPaper
-    {
-        Notebook,
+	recipe MakeSheetPaper
+	{
+		Notebook,
 
-        CanBeDoneFromFloor: true,
-        Result: SheetPaper2=4,
-        Sound:ClothesRipping,
-        AnimNode:RipSheets,
-        Time:100.0,
-        OnGiveXP: Recipe.OnGiveXP.None,
-    }
+		CanBeDoneFromFloor: true,
+		Result: SheetPaper2=4,
+		Sound:ClothesRipping,
+		AnimNode:RipSheets,
+		Time:100.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+	/* --------------- Magazine RECIPE -----------------*/
+	recipe MakeCompleteFishingMag
+	{
+		Base.Paperclip,
+		Base.FishingMag1,
+		Base.FishingMag2,
 
+		CanBeDoneFromFloor: true,
+		Result: EZ_FishingMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteMechanicgMag
+	{
+		Base.Paperclip,
+		Base.MechanicMag1,
+		Base.MechanicMag2,
+		Base.MechanicMag3,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_MechanicMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteHuntingMag
+	{
+		Base.Paperclip,
+		Base.HuntingMag1,
+		Base.HuntingMag2,
+		Base.HuntingMag3,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_HuntingMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteMetalworkMag
+	{
+		Base.Paperclip,
+		Base.MetalworkMag1,
+		Base.MetalworkMag2,
+		Base.MetalworkMag3,
+		Base.MetalworkMag4,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_MetalworkMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteCookingMag
+	{
+		Base.Paperclip,
+		Base.CookingMag1,
+		Base.CookingMag2,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_CookingMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteElectronicMag
+	{
+		Base.Paperclip,
+		Base.ElectronicsMag1,
+		Base.ElectronicsMag2,
+		Base.ElectronicsMag3,
+		Base.ElectronicsMag4,
+		Base.ElectronicsMag5,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_ElectronicMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteEngineerMag
+	{
+		Base.Paperclip,
+		Base.EngineerMagazine1,
+		Base.EngineerMagazine2,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_EngineerMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
+
+	recipe MakeCompleteRadioMag
+	{
+		Base.Paperclip,
+		Radio.RadioMag1,
+		Radio.RadioMag2,
+		Radio.RadioMag3,
+
+		CanBeDoneFromFloor: true,
+		Result: EZ_RadioMagComplete,
+		Time: 20.0,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
 }

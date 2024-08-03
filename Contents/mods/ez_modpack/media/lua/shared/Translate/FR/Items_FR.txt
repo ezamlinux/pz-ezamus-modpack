@@ -1,29 +1,29 @@
 Items_FR = {
-    /* Cigarette */
-    DisplayName_Cigarette_Pack = "Paquet de Cigarette",
-    DisplayName_EZ_CigaretteCarton = "Cartouche de Cigarette",
+	/* Cigarette */
+	DisplayName_Cigarette_Pack = "Paquet de Cigarette",
+	DisplayName_EZ_CigaretteCarton = "Cartouche de Cigarette",
 
-    /* Kefir */
-    DisplayName_EZ_FilterableKefirJar = "Bocal de Kefir fermentee (Filtrable)",
-    DisplayName_EZ_KefirJar = "Bocal de Kefir en fermentation",
-    DisplayName_EZ_FilteredKefirBottle = "Bouteille de Kefir",
-    DisplayName_EZ_FilteredKefirBleachBottle = "Grande bouteille de Kefir",
-    DisplayName_EZ_KefirSeed = "Grain de Kefir",
+	/* Kefir */
+	DisplayName_EZ_FilterableKefirJar = "Bocal de Kefir fermentee (Filtrable)",
+	DisplayName_EZ_KefirJar = "Bocal de Kefir en fermentation",
+	DisplayName_EZ_FilteredKefirBottle = "Bouteille de Kefir",
+	DisplayName_EZ_FilteredKefirBleachBottle = "Grande bouteille de Kefir",
+	DisplayName_EZ_KefirSeed = "Grain de Kefir",
 
-    /* Cider */
-    DisplayName_PI_FilterableCiderJar = "Bocal de Cidre fermentee (Filtrable)",
-    DisplayName_PI_CiderJar = "Bocal de Cidre en fermentation",
-    DisplayName_PI_FilteredCiderBottle = "Bouteille de Cidre",
+	/* Cider */
+	DisplayName_PI_FilterableCiderJar = "Bocal de Cidre fermentee (Filtrable)",
+	DisplayName_PI_CiderJar = "Bocal de Cidre en fermentation",
+	DisplayName_PI_FilteredCiderBottle = "Bouteille de Cidre",
 
-    /* Wild Wine */
-    DisplayName_EZ_FilterableWildWineJar = "Bocal de Vin sauvage fermentee (Filtrable)",
-    DisplayName_EZ_WildWineJar = "Bocal de Vin sauvage en fermentation",
-    DisplayName_EZ_FilteredWildWineBottle = "Bouteille de Vin sauvage",
+	/* Wild Wine */
+	DisplayName_EZ_FilterableWildWineJar = "Bocal de Vin sauvage fermentee (Filtrable)",
+	DisplayName_EZ_WildWineJar = "Bocal de Vin sauvage en fermentation",
+	DisplayName_EZ_FilteredWildWineBottle = "Bouteille de Vin sauvage",
 
-    DisplayName_EZ_VinegarJar = "Bocal de vinaigre",
-    DisplayName_EZ_TwigStacks10 = "Petit fagot de brindilles",
-    DisplayName_EZ_TwigStacks20 = "Fagot de brindilles",
+	DisplayName_EZ_VinegarJar = "Bocal de vinaigre",
+	DisplayName_EZ_TwigStacks10 = "Petit fagot de brindilles",
+	DisplayName_EZ_TwigStacks20 = "Fagot de brindilles",
 
-    DisplayName_EZ_BranchStacks5 = "Petit fagot de branches",
-    DisplayName_EZ_BranchStacks10 = "Fagot de branches",
+	DisplayName_EZ_BranchStacks5 = "Petit fagot de branches",
+	DisplayName_EZ_BranchStacks10 = "Fagot de branches",
 }

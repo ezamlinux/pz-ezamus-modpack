@@ -3,7 +3,7 @@ require 'Items/ProceduralDistributions'
 
 ----------- KEFIR -----------
 
-local kefir_seed_rand = 20
+local kefir_seed_rand = 8
 
 local kefir_jar_rand = 2
 

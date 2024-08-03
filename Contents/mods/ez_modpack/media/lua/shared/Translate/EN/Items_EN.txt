@@ -1,30 +1,40 @@
 Items_EN = {
-    /* Cigarette */
-    DisplayName_Cigarette_Pack = "Cigarette Pack",
-    DisplayName_EZ_CigaretteCarton = "Cigarette Carton",
+	/* Cigarette */
+	DisplayName_Cigarette_Pack = "Cigarette Pack",
+	DisplayName_EZ_CigaretteCarton = "Cigarette Carton",
 
-    /* Kefir */
-    DisplayName_EZ_FilterableKefirJar = "Fermented Kefir Jar (Filterable)",
-    DisplayName_EZ_KefirJar = "Unfermented Kefir Jar",
-    DisplayName_EZ_FilteredKefirBottle = "Kefir Bottle",
-    DisplayName_EZ_FilteredKefirBleachBottle = "Large Kefir Bottle",
-    DisplayName_EZ_KefirSeed = "Kefir Seed",
+	/* Kefir */
+	DisplayName_EZ_FilterableKefirJar = "Fermented Kefir Jar (Filterable)",
+	DisplayName_EZ_KefirJar = "Unfermented Kefir Jar",
+	DisplayName_EZ_FilteredKefirBottle = "Kefir Bottle",
+	DisplayName_EZ_FilteredKefirBleachBottle = "Large Kefir Bottle",
+	DisplayName_EZ_KefirSeed = "Kefir Seed",
 
-    /* Cider*/
-    DisplayName_PI_FilterableCiderJar = "Fermented Cider Jar (Filterable)",
-    DisplayName_PI_CiderJar = "Unfermented Cider Jar",
-    DisplayName_PI_FilteredCiderBottle = "Cider Bottle",
+	/* Cider*/
+	DisplayName_PI_FilterableCiderJar = "Fermented Cider Jar (Filterable)",
+	DisplayName_PI_CiderJar = "Unfermented Cider Jar",
+	DisplayName_PI_FilteredCiderBottle = "Cider Bottle",
 
-    /* Wild Wine */
-    DisplayName_EZ_FilterableWildWineJar = "Fermented Wild Wine Jar (Filterable)",
-    DisplayName_EZ_WildWineJar = "Unfermented Wild Wine Jar",
-    DisplayName_EZ_FilteredWildWineBottle = "Wild Wine Bottle",
+	/* Wild Wine */
+	DisplayName_EZ_FilterableWildWineJar = "Fermented Wild Wine Jar (Filterable)",
+	DisplayName_EZ_WildWineJar = "Unfermented Wild Wine Jar",
+	DisplayName_EZ_FilteredWildWineBottle = "Wild Wine Bottle",
 
-    DisplayName_EZ_VinegarJar = "Vinegar Jar",
+	DisplayName_EZ_VinegarJar = "Vinegar Jar",
 
-    DisplayName_EZ_TwigStacks10 = "Small Twigs Stack",
-    DisplayName_EZ_TwigStacks20 = "Twigs Stack",
+	DisplayName_EZ_TwigStacks10 = "Small Twigs Stack",
+	DisplayName_EZ_TwigStacks20 = "Twigs Stack",
 
-    DisplayName_EZ_BranchStacks5 = "Small Branch Stack",
-    DisplayName_EZ_BranchStacks10 = "Branch Stack",
+	DisplayName_EZ_BranchStacks5 = "Small Branch Stack",
+	DisplayName_EZ_BranchStacks10 = "Branch Stack",
+
+	/* Clippy & Magazine*/
+	DisplayName_EZ_FishingMagComplete = "Almanach: Angler USA Magazines",
+	DisplayName_EZ_MechanicMagComplete = "Almanach: Laines Auto Manuals",
+	DisplayName_EZ_MetalworkMagComplete = "Almanach: The Metalwork Magazines",
+	DisplayName_EZ_HuntingMagComplete = "Almanach: The Hunter Magazines",
+	DisplayName_EZ_CookingMagComplete = "Almanach: Good Cooking Magazines",
+	DisplayName_EZ_ElectronicMagComplete = "Almanach: Electronics Magazines",
+	DisplayName_EZ_EngineerMagComplete = "Almanach: Engineer Magazines",
+	DisplayName_EZ_RadioMagComplete = "Almanach: Guerrila Radio",
 }

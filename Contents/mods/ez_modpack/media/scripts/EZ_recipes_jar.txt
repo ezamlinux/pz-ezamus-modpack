@@ -1,154 +1,154 @@
 module EZ_LR
 {
-    imports {
-        Base,
-    }
+	imports {
+		Base,
+	}
 
-    recipe EmptyJar
-    {
-        [Recipe.GetItemTypes.FullJar],
+	recipe EmptyJar
+	{
+		[Recipe.GetItemTypes.FullJar],
 
-        CanBeDoneFromFloor: true,
-        Result: EmptyJar,
-        Time: 60.0,
-        Category: Cooking,
-        OnCreate: EZ_recipe_Empty_Jar,
-        OnGiveXP: Recipe.OnGiveXP.None,
-    }
+		CanBeDoneFromFloor: true,
+		Result: EmptyJar,
+		Time: 60.0,
+		Category: Cooking,
+		OnCreate: EZ_recipe_Empty_Jar,
+		OnGiveXP: Recipe.OnGiveXP.None,
+	}
 
-    /* --- KEFIR --- */
+	/* --- KEFIR --- */
 
-    recipe MakeKefirJar
-    {
-        Water = 20,
-        EZ_KefirSeed = 5,
-        Lemon/Lime,
-        [Recipe.GetItemTypes.Sugar];1,
-        EmptyJar,
-        JarLid,z
+	recipe MakeKefirJar
+	{
+		Water = 20,
+		EZ_KefirSeed = 5,
+		Lemon/Lime,
+		[Recipe.GetItemTypes.Sugar];1,
+		EmptyJar,
+		JarLid,
 
-        CanBeDoneFromFloor: true,
-        Result: EZ_KefirJar,
-        Time: 250.0,
-        Category: Cooking,
-        SkillRequired:Cooking=2,
-        OnGiveXP: Recipe.OnGiveXP.Cooking10,
-    }
+		CanBeDoneFromFloor: true,
+		Result: EZ_KefirJar,
+		Time: 250.0,
+		Category: Cooking,
+		SkillRequired: Cooking=2,
+		OnGiveXP: Recipe.OnGiveXP.Cooking10,
+	}
 
-    recipe FilterKefirJar
-    {
-        EZ_FilterableKefirJar,
-        WaterBottleEmpty/PopBottleEmpty,
-        WaterBottleEmpty/PopBottleEmpty,
-        AlcoholRippedSheets,
+	recipe FilterKefirJar
+	{
+		EZ_FilterableKefirJar,
+		WaterBottleEmpty/PopBottleEmpty,
+		WaterBottleEmpty/PopBottleEmpty,
+		AlcoholRippedSheets,
 
-        CanBeDoneFromFloor: true,
-        Result: EZ_FilteredKefirBottle=2,
-        Time: 200.0,
-        Category: Cooking,
-        OnCreate: EZ_recipe_Process_Kefir,
-        OnGiveXP: Recipe.OnGiveXP.Cooking3,
-    }
+		CanBeDoneFromFloor: true,
+		Result: EZ_FilteredKefirBottle=2,
+		Time: 200.0,
+		Category: Cooking,
+		OnCreate: EZ_recipe_Process_Kefir,
+		OnGiveXP: Recipe.OnGiveXP.Cooking3,
+	}
 
-    recipe FilterKefirJarBleach
-    {
-        EZ_FilterableKefirJar,
-        BleachEmpty,
-        AlcoholRippedSheets,
+	recipe FilterKefirJarBleach
+	{
+		EZ_FilterableKefirJar,
+		BleachEmpty,
+		AlcoholRippedSheets,
 
-        CanBeDoneFromFloor: true,
-        Result: EZ_FilteredKefirBleachBottle,
-        Time: 200.0,
-        Category: Cooking,
-        OnCreate: EZ_recipe_Process_Kefir,
-        OnGiveXP: Recipe.OnGiveXP.Cooking3,
-    }
+		CanBeDoneFromFloor: true,
+		Result: EZ_FilteredKefirBleachBottle,
+		Time: 200.0,
+		Category: Cooking,
+		OnCreate: EZ_recipe_Process_Kefir,
+		OnGiveXP: Recipe.OnGiveXP.Cooking3,
+	}
 
-    /* --- Wild Wine --- */
+	/* --- Wild Wine --- */
 
-    recipe MakeWildWineJar
-    {
-        Water = 10,
-        Grapes = 5,
-        EmptyJar,
-        JarLid,
+	recipe MakeWildWineJar
+	{
+		Water = 10,
+		Grapes = 5,
+		EmptyJar,
+		JarLid,
 
-        CanBeDoneFromFloor: true,
-        Result: EZ_WildWineJar,
-        Time: 250.0,
-        Category: Cooking,
-        SkillRequired:Cooking=2,
-        OnGiveXP: Recipe.OnGiveXP.Cooking10,
-    }
+		CanBeDoneFromFloor: true,
+		Result: EZ_WildWineJar,
+		Time: 250.0,
+		Category: Cooking,
+		SkillRequired:Cooking=2,
+		OnGiveXP: Recipe.OnGiveXP.Cooking10,
+	}
 
-    recipe FilterWildWineJar
-    {
-        EZ_FilterableWildWineJar,
-        WineEmpty/WineEmpty2,
-        AlcoholRippedSheets,
+	recipe FilterWildWineJar
+	{
+		EZ_FilterableWildWineJar,
+		WineEmpty/WineEmpty2,
+		AlcoholRippedSheets,
 
-        Result: EZ_FilteredWildWineBottle=1,
-        Time: 200.0,
-        Category: Cooking,
-        OnCreate: EZ_recipe_Process_Jar,
-        OnGiveXP: Recipe.OnGiveXP.Cooking3,
-    }
+		Result: EZ_FilteredWildWineBottle=1,
+		Time: 200.0,
+		Category: Cooking,
+		OnCreate: EZ_recipe_Process_Jar,
+		OnGiveXP: Recipe.OnGiveXP.Cooking3,
+	}
 
-    /* --- VINEGAR --- */
-    recipe FilterVinegar
-    {
-        EZ_VinegarJar,
-        BeerEmpty=2,
-        AlcoholRippedSheets,
+	/* --- VINEGAR --- */
+	recipe FilterVinegar
+	{
+		EZ_VinegarJar,
+		BeerEmpty=2,
+		AlcoholRippedSheets,
 
-        Result: Vinegar=2,
-        Time: 200.0,
-        Category: Cooking,
-        SkillRequired:Cooking=2,
-        OnCreate: EZ_recipe_Process_Jar,
-        OnGiveXP: Recipe.OnGiveXP.Cooking3,
-    }
+		Result: Vinegar=2,
+		Time: 200.0,
+		Category: Cooking,
+		SkillRequired: Cooking=2,
+		OnCreate: EZ_recipe_Process_Jar,
+		OnGiveXP: Recipe.OnGiveXP.Cooking3,
+	}
 
-    /* --- Cider --- */
+	/* --- Cider --- */
 
-    recipe MakeCiderJar
-    {
-        Water = 10,
-        Apple = 5,
-        EmptyJar,
-        JarLid,
+	recipe MakeCiderJar
+	{
+		Water = 10,
+		Apple = 5,
+		EmptyJar,
+		JarLid,
 
-        CanBeDoneFromFloor: true,
-        Result: PI_CiderJar,
-        Time: 250.0,
-        Category: Cooking,
-        SkillRequired:Cooking=2,
-        OnGiveXP: Recipe.OnGiveXP.Cooking10,
-    }
+		CanBeDoneFromFloor: true,
+		Result: PI_CiderJar,
+		Time: 250.0,
+		Category: Cooking,
+		SkillRequired: Cooking=2,
+		OnGiveXP: Recipe.OnGiveXP.Cooking10,
+	}
 
-    recipe FilterCiderJar
-    {
-        PI_FilterableCiderJar,
-        WineEmpty/WineEmpty2,
-        AlcoholRippedSheets,
+	recipe FilterCiderJar
+	{
+		PI_FilterableCiderJar,
+		WineEmpty/WineEmpty2,
+		AlcoholRippedSheets,
 
-        Result: PI_FilteredCiderBottle=1,
-        Time: 200.0,
-        Category: Cooking,
-        OnCreate: EZ_recipe_Process_Jar,
-        OnGiveXP: Recipe.OnGiveXP.Cooking3,
-    }
+		Result: PI_FilteredCiderBottle=1,
+		Time: 200.0,
+		Category: Cooking,
+		OnCreate: EZ_recipe_Process_Jar,
+		OnGiveXP: Recipe.OnGiveXP.Cooking3,
+	}
 
-     /* BOX OF JARS */
+	 /* BOX OF JARS */
 
-    recipe MakeBoxOfJars
-    {
-        Base.EmptyJar = 6,
-        Base.JarLid = 6,
+	recipe MakeBoxOfJars
+	{
+		Base.EmptyJar = 6,
+		Base.JarLid = 6,
 
-        CanBeDoneFromFloor: true,
-        Result: BoxOfJars,
-        Time: 15.0,
-        Sound: PutItemInBag,
-    }
+		CanBeDoneFromFloor: true,
+		Result: BoxOfJars,
+		Time: 15.0,
+		Sound: PutItemInBag,
+	}
 }

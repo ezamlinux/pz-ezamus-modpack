@@ -1,78 +1,78 @@
 module EZ_CP
 {
-    imports
-    {
-        Base,
-    }
+	imports
+	{
+		Base,
+	}
 
-    item EZ_CigaretteSingle
-    {
-        DisplayCategory = Junk,
-        HungerChange = 0,
-        Weight = 0.005,
-        RequireInHandOrInventory = Lighter/Matches,
-        Type = Food,
-        DisplayName = Cigarette,
-        StressChange = -5,
-        Icon = EZ_SingleCigarette,
-        CustomContextMenu = Smoke,
-        CantBeFrozen = TRUE,
-        OnEat = OnEat_Cigarettes,
-        StaticModel = Cigarette,
-        EatType = Cigarettes,
-        WorldStaticModel = SingleCigarette_Ground,
-        CustomEatSound = ,
-    }
+	item EZ_CigaretteSingle
+	{
+		DisplayCategory = Junk,
+		HungerChange = 0,
+		Weight = 0.005,
+		RequireInHandOrInventory = Lighter/Matches,
+		Type = Food,
+		DisplayName = Cigarette,
+		StressChange = -5,
+		Icon = EZ_SingleCigarette,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = SingleCigarette_Ground,
+		CustomEatSound = ,
+	}
 
-    item EZ_CigaretteCarton
-    {
-        DisplayCategory = Junk,
-        Weight = 0.9,
-        Type = Normal,
-        DisplayName = EZ_CigaretteCarton,
-        Icon = EZ_Box,
-        CantBeFrozen = TRUE,
-        WorldStaticModel = CigaretteBox_Ground,
-        UseWhileEquipped = FALSE,
-    }
+	item EZ_CigaretteCarton
+	{
+		DisplayCategory = Junk,
+		Weight = 0.9,
+		Type = Normal,
+		DisplayName = EZ_CigaretteCarton,
+		Icon = EZ_Box,
+		CantBeFrozen = TRUE,
+		WorldStaticModel = CigaretteBox_Ground,
+		UseWhileEquipped = FALSE,
+	}
 
-    /* --------------- MOD RECIPE -----------------*/
+	/* --------------- MOD RECIPE -----------------*/
 
-    recipe MakeCigarettePack
-    {
-        EZ_CigaretteSingle=20,
+	recipe MakeCigarettePack
+	{
+		EZ_CigaretteSingle=20,
 
-        Result: Cigarettes,
-        Time: 20.0,
-        Sound: PutItemInBag,
-        CanBeDoneFromFloor: true,
-    }
+		Result: Cigarettes,
+		Time: 20.0,
+		Sound: PutItemInBag,
+		CanBeDoneFromFloor: true,
+	}
 
-    recipe OpenCigarettePack
-    {
-        Cigarettes,
+	recipe OpenCigarettePack
+	{
+		Cigarettes,
 
-        Result: EZ_CigaretteSingle=20,
-        Time: 20.0,
-        CanBeDoneFromFloor: true,
-    }
+		Result: EZ_CigaretteSingle=20,
+		Time: 20.0,
+		CanBeDoneFromFloor: true,
+	}
 
-    recipe MakeCigaretteCarton
-    {
-        Cigarettes=10,
+	recipe MakeCigaretteCarton
+	{
+		Cigarettes=10,
 
-        Result: EZ_CigaretteCarton,
-        Time: 60.0,
-        Sound: PutItemInBag,
-        CanBeDoneFromFloor: true,
-    }
+		Result: EZ_CigaretteCarton,
+		Time: 60.0,
+		Sound: PutItemInBag,
+		CanBeDoneFromFloor: true,
+	}
 
-    recipe OpenCigaretteCarton
-    {
-        EZ_CigaretteCarton,
+	recipe OpenCigaretteCarton
+	{
+		EZ_CigaretteCarton,
 
-        Result: Cigarettes=10,
-        Time: 60.0,
-        CanBeDoneFromFloor: true,
-    }
+		Result: Cigarettes=10,
+		Time: 60.0,
+		CanBeDoneFromFloor: true,
+	}
 }

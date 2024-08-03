@@ -1,241 +1,241 @@
 module EZ_LR
 {
-    imports
-    {
-        Base,
-    }
+	imports
+	{
+		Base,
+	}
 
-    /* --- KEFIR --- */
+	/* --- KEFIR --- */
 
-    item EZ_FilterableKefirJar
-    {
-        DisplayName = EZ_FilterableKefirJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1.8,
-        Icon = EZ_KefirJar,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarKefir_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item EZ_FilterableKefirJar
+	{
+		DisplayName = EZ_FilterableKefirJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.8,
+		Icon = EZ_KefirJar,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarKefir_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item EZ_KefirJar
-    {
-        DisplayName = EZ_KefirJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1.8,
-        Icon = EZ_KefirJar,
-        DaysFresh = 1,
-        DaysTotallyRotten = 2,
-        ReplaceOnRotten = EZ_FilterableKefirJar,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarKefir_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item EZ_KefirJar
+	{
+		DisplayName = EZ_KefirJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.8,
+		Icon = EZ_KefirJar,
+		DaysFresh = 1,
+		DaysTotallyRotten = 2,
+		ReplaceOnRotten = EZ_FilterableKefirJar,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarKefir_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item EZ_FilteredKefirBottle
-    {
-        DisplayName = EZ_FilteredKefirBottle,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 0.8,
-        Icon = WaterBottle_Full,
-        FoodType = SoftDrink,
-        EatType = bottle,
-        Packaged = TRUE,
-        ReplaceOnUse = WaterBottleEmpty,
-        DaysFresh = 15,
-        HungerChange = -10,
-        ThirstChange = -35,
-        UnhappyChange = -7,
-        Calories = 150,
-        Carbohydrates = 50,
-        Lipids = 0,
-        Proteins = 10,
-        CustomContextMenu = Drink,
-        CustomEatSound = DrinkingFromBottlePlastic,
-        StaticModel = WaterBottle,
-        WorldStaticModel = WaterBottleEmpty,
-    }
+	item EZ_FilteredKefirBottle
+	{
+		DisplayName = EZ_FilteredKefirBottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = WaterBottle_Full,
+		FoodType = SoftDrink,
+		EatType = bottle,
+		Packaged = TRUE,
+		ReplaceOnUse = WaterBottleEmpty,
+		DaysFresh = 15,
+		HungerChange = -10,
+		ThirstChange = -35,
+		UnhappyChange = -7,
+		Calories = 150,
+		Carbohydrates = 50,
+		Lipids = 0,
+		Proteins = 10,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = WaterBottle,
+		WorldStaticModel = WaterBottleEmpty,
+	}
 
-    item EZ_FilteredKefirBleachBottle
-    {
-        DisplayName = EZ_FilteredKefirBleachBottle,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1.6,
-        Icon = Bleach,
-        FoodType = SoftDrink,
-        EatType = BleachBottle,
-        Packaged = TRUE,
-        ReplaceOnUse = BleachEmpty,
-        DaysFresh = 15,
-        HungerChange = -20,
-        ThirstChange = -70,
-        UnhappyChange = -14,
-        Calories = 300,
-        Carbohydrates = 100,
-        Lipids = 0,
-        Proteins = 20,
-        CustomContextMenu = Drink,
-        CustomEatSound = DrinkingFromBottlePlastic,
-        StaticModel = BleachBottle,
-        WorldStaticModel = BleachBottle,
-    }
+	item EZ_FilteredKefirBleachBottle
+	{
+		DisplayName = EZ_FilteredKefirBleachBottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.6,
+		Icon = Bleach,
+		FoodType = SoftDrink,
+		EatType = BleachBottle,
+		Packaged = TRUE,
+		ReplaceOnUse = BleachEmpty,
+		DaysFresh = 15,
+		HungerChange = -20,
+		ThirstChange = -70,
+		UnhappyChange = -14,
+		Calories = 300,
+		Carbohydrates = 100,
+		Lipids = 0,
+		Proteins = 20,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		StaticModel = BleachBottle,
+		WorldStaticModel = BleachBottle,
+	}
 
-    item EZ_KefirSeed
-    {
-        DisplayName = EZ_KefirSeed,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 0.05,
-        Icon = EZ_KefirSeed,
-        FoodType = Seed,
-        CantBeFrozen = TRUE,
-        Packaged = TRUE,
-        HungerChange = -2,
-        UnhappyChange = 10,
-        WorldStaticModel = SunflowerSeeds,
-    }
+	item EZ_KefirSeed
+	{
+		DisplayName = EZ_KefirSeed,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.05,
+		Icon = EZ_KefirSeed,
+		FoodType = Seed,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -2,
+		UnhappyChange = 10,
+		WorldStaticModel = SunflowerSeeds,
+	}
 
-    /* ---- Wild Wine --- */
+	/* ---- Wild Wine --- */
 
-    item EZ_VinegarJar
-    {
-        DisplayName = EZ_VinegarJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = EZ_WildWine,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarVinegar_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item EZ_VinegarJar
+	{
+		DisplayName = EZ_VinegarJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = EZ_WildWine,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarVinegar_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item EZ_FilterableWildWineJar
-    {
-        DisplayName = EZ_FilterableWildWineJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = EZ_WildWine,
-        DaysFresh = 10,
-        DaysTotallyRotten = 20,
-        ReplaceOnRotten = EZ_FilterableVinegarJar,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarWildWine_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item EZ_FilterableWildWineJar
+	{
+		DisplayName = EZ_FilterableWildWineJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = EZ_WildWine,
+		DaysFresh = 10,
+		DaysTotallyRotten = 20,
+		ReplaceOnRotten = EZ_FilterableVinegarJar,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarWildWine_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item EZ_WildWineJar
-    {
-        DisplayName = EZ_WildWineJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = EZ_WildWine,
-        DaysFresh = 5,
-        DaysTotallyRotten = 10,
-        ReplaceOnRotten = EZ_FilterableWildWineJar,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarWildWine_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item EZ_WildWineJar
+	{
+		DisplayName = EZ_WildWineJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = EZ_WildWine,
+		DaysFresh = 5,
+		DaysTotallyRotten = 10,
+		ReplaceOnRotten = EZ_FilterableWildWineJar,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarWildWine_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item EZ_FilteredWildWineBottle
-    {
-        DisplayName = EZ_FilteredWildWineBottle,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = Wine2Full,
-        FoodType = Wine,
-        EatType = Bourbon,
-        EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4,
-        Packaged = TRUE,
-        Alcoholic = TRUE,
-        ReplaceOnUse = WineEmpty2,
-        HungerChange = -15,
-        ThirstChange = -15,
-        UnhappyChange = -10,
-        Calories = 410,
-        Carbohydrates = 0,
-        Lipids = 0,
-        Proteins = 0,
-        CustomContextMenu = Drink,
-        CustomEatSound = DrinkingFromBottleGlass,
-        StaticModel = RedWineBottle,
-        WorldStaticModel = WineRedGround,
-    }
+	item EZ_FilteredWildWineBottle
+	{
+		DisplayName = EZ_FilteredWildWineBottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = Wine2Full,
+		FoodType = Wine,
+		EatType = Bourbon,
+		EvolvedRecipe = Beverage:4;Beverage2:4;HotDrink:4;HotDrinkRed:4;HotDrinkWhite:4;HotDrinkSpiffo:4;HotDrinkTea:4;Soup:4;Stew:4;PastaPot:4;PastaPan:4;WineInGlass:4,
+		Packaged = TRUE,
+		Alcoholic = TRUE,
+		ReplaceOnUse = WineEmpty2,
+		HungerChange = -15,
+		ThirstChange = -15,
+		UnhappyChange = -10,
+		Calories = 410,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+	}
 
-    /* --- CIDER --- */
+	/* --- CIDER --- */
 
-    item PI_FilterableCiderJar
-    {
-        DisplayName = PI_FilterableCiderJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = PI_CiderJar,
-        DaysFresh = 5,
-        DaysTotallyRotten = 30,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarCider_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item PI_FilterableCiderJar
+	{
+		DisplayName = PI_FilterableCiderJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = PI_CiderJar,
+		DaysFresh = 5,
+		DaysTotallyRotten = 30,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarCider_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item PI_CiderJar
-    {
-        DisplayName = PI_CiderJar,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 1,
-        Icon = PI_CiderJar,
-        DaysFresh = 1,
-        DaysTotallyRotten = 5,
-        ReplaceOnRotten = PI_FilterableCiderJar,
-        UseWhileEquipped = FALSE,
-        StaticModel = CanClosed,
-        WorldStaticModel = JarCider_Ground,
-        CantBeFrozen = TRUE,
-        Tags = FullJar,
-    }
+	item PI_CiderJar
+	{
+		DisplayName = PI_CiderJar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = PI_CiderJar,
+		DaysFresh = 1,
+		DaysTotallyRotten = 5,
+		ReplaceOnRotten = PI_FilterableCiderJar,
+		UseWhileEquipped = FALSE,
+		StaticModel = CanClosed,
+		WorldStaticModel = JarCider_Ground,
+		CantBeFrozen = TRUE,
+		Tags = FullJar,
+	}
 
-    item PI_FilteredCiderBottle
-    {
-        DisplayName = PI_FilteredCiderBottle,
-        DisplayCategory = Food,
-        Type = Food,
-        Weight = 0.8,
-        Icon = WineFull,
-        FoodType = Bourbon,
-        EatType = bottle,
-        Packaged = TRUE,
-        ReplaceOnUse = WineEmpty,
-        DaysFresh = 365,
-        HungerChange = -20,
-        ThirstChange = -30,
-        UnhappyChange = -15,
-        Calories = 410,
-        Carbohydrates = 21,
-        Lipids = 0,
-        Proteins = 1,
-        CustomContextMenu = Drink,
-        CustomEatSound = DrinkingFromBottleGlass,
-        StaticModel = WhiteWineBottle,
-        WorldStaticModel = WineWhiteGround,
-    }
+	item PI_FilteredCiderBottle
+	{
+		DisplayName = PI_FilteredCiderBottle,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = WineFull,
+		FoodType = Bourbon,
+		EatType = bottle,
+		Packaged = TRUE,
+		ReplaceOnUse = WineEmpty,
+		DaysFresh = 365,
+		HungerChange = -20,
+		ThirstChange = -30,
+		UnhappyChange = -15,
+		Calories = 410,
+		Carbohydrates = 21,
+		Lipids = 0,
+		Proteins = 1,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = WhiteWineBottle,
+		WorldStaticModel = WineWhiteGround,
+	}
 }

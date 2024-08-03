@@ -1,47 +1,153 @@
 module EZ_LR
 {
-    imports
-    {
-        Base,
-    }
+	imports
+	{
+		Base,
+	}
 
-    item EZ_TwigStacks10
-    {
-        DisplayCategory = Material,
-        Weight = 0.9,
-        Type = Normal,
-        DisplayName = EZ_TwigStacks10,
-        Icon = Twigs,
-        WorldStaticModel = TwigsStack10_Ground,
-    }
+	item EZ_TwigStacks10
+	{
+		DisplayCategory = Material,
+		Weight = 0.9,
+		Type = Normal,
+		DisplayName = EZ_TwigStacks10,
+		Icon = Twigs,
+		WorldStaticModel = TwigsStack10_Ground,
+	}
 
-    item EZ_TwigStacks20
-    {
-        DisplayCategory = Material,
-        Weight = 1.5,
-        Type = Normal,
-        DisplayName = EZ_TwigStacks20,
-        Icon = Twigs,
-        WorldStaticModel = TwigsStack20_Ground,
-    }
+	item EZ_TwigStacks20
+	{
+		DisplayCategory = Material,
+		Weight = 1.5,
+		Type = Normal,
+		DisplayName = EZ_TwigStacks20,
+		Icon = Twigs,
+		WorldStaticModel = TwigsStack20_Ground,
+	}
 
-    item EZ_BranchStacks5
-    {
-        DisplayCategory = Material,
-        Weight = 6,
-        Type = Normal,
-        DisplayName = EZ_BranchStacks5,
-        Icon = Branch,
-        WorldStaticModel = TreeStack5_Ground,
-    }
+	item EZ_BranchStacks5
+	{
+		DisplayCategory = Material,
+		Weight = 6,
+		Type = Normal,
+		DisplayName = EZ_BranchStacks5,
+		Icon = Branch,
+		WorldStaticModel = TreeStack5_Ground,
+	}
 
-    item EZ_BranchStacks10
-    {
-        DisplayCategory = Material,
-        Weight = 10,
-        Type = Normal,
-        DisplayName = EZ_BranchStacks10,
-        Icon = Branch,
-        WorldStaticModel = TreeStack10_Ground,
-    }
+	item EZ_BranchStacks10
+	{
+		DisplayCategory = Material,
+		Weight = 10,
+		Type = Normal,
+		DisplayName = EZ_BranchStacks10,
+		Icon = Branch,
+		WorldStaticModel = TreeStack10_Ground,
+	}
+
+	/** ---- recipe Magazine----**/
+
+	item EZ_FishingMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_FishingMagComplete,
+		Icon = MagazineFish,
+		TeachedRecipes = Make Fishing Rod;Fix Fishing Rod;Make Fishing Net;Get Wire Back,
+		ReplaceOnUse = EZ_FishingMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineFish1Ground,
+	}
+
+	item EZ_MechanicMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_MechanicMagComplete,
+		Icon = MagazineMechanic1,
+		TeachedRecipes = Basic Mechanics;Intermediate Mechanics;Advanced Mechanics,
+		ReplaceOnUse = EZ_MechanicMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMec1Ground,
+	}
+
+	item EZ_MetalworkMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_MetalworkMagComplete,
+		Icon = MagazineWelding1,
+		TeachedRecipes = Make Metal Walls;Make Metal Roof;Make Metal Containers;Make Metal Fences;Make Metal Sheet;Make Small Metal Sheet,
+		ReplaceOnUse = EZ_MetalworkMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMetal1Ground,
+	}
+
+	item EZ_HuntingMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_HuntingMagComplete,
+		Icon = MagazineHunting,
+		TeachedRecipes = Make Snare Trap;Make Wooden Box Trap;Make Stick Trap;Make Trap Box;Make Cage Trap,
+		ReplaceOnUse = EZ_HuntingMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineHunter1Ground,
+	}
+
+	item EZ_CookingMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_CookingMagComplete,
+		Icon = MagazineFood,
+		TeachedRecipes = Make Cake Batter;Make Pie Dough;Make Chocolate Chip Cookie Dough;Make Chocolate Cookie Dough;Make Oatmeal Cookie Dough;Make Sugar Cookie Dough;Make Shortbread Cookie Dough;Make Bread Dough;Make Biscuits;Make Pizza,
+		ReplaceOnUse = EZ_CookingMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook1Ground,
+	}
+
+	item EZ_ElectronicMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_ElectronicMagComplete,
+		Icon = MagazineElectronics01,
+		TeachedRecipes = Make Remote Controller V1;Make Remote Controller V2;Make Remote Controller V;Make Timer;Add Timer;Add Motion Sensor V1;Add Motion Sensor V2;Add Motion Sensor V3;Generator;Make Remote Trigger;Add Crafted Trigger,
+		ReplaceOnUse = EZ_ElectronicMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec1Ground,
+	}
+
+	item EZ_EngineerMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_EngineerMagComplete,
+		Icon = MagazineMechanics,
+		TeachedRecipes = Make Noise Maker;Make Smoke Bomb,
+		ReplaceOnUse = EZ_EngineerMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineEngi1Ground,
+	}
+
+	item EZ_RadioMagComplete
+	{
+		DisplayCategory = SkillBook,
+		Weight=	0.1,
+		Type = Literature,
+		DisplayName	= EZ_RadioMagComplete,
+		Icon = MagazineElectronics01,
+		TeachedRecipes = Craft Makeshift Radio;Craft Makeshift Walkie Talkie;Craft Makeshift HAM Radio,
+		ReplaceOnUse = EZ_RadioMagComplete,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineRadio1Ground,
+	}
 }

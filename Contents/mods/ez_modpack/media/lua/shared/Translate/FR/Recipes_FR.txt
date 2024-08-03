@@ -1,51 +1,51 @@
 Recipe_FR = {
-    * MISC */
-    Recipe_EmptyJar = "Vider le bocal",
+	/* MISC */
+	Recipe_EmptyJar = "Vider le bocal",
 
-    /* Cigarette */
-    Recipe_MakeCigarettePack = "Creer un paquet de Cigarette",
-    Recipe_MakeCigaretteCarton = "Creer une cartouche de Cigarette",
-    Recipe_OpenCigarettePack = "Ouvrir le paquet de Cigarette",
-    Recipe_OpenCigaretteCarton = "Ouvrir la cartouche de Cigarette",
+	/* Cigarette */
+	Recipe_MakeCigarettePack = "Creer un paquet de Cigarette",
+	Recipe_MakeCigaretteCarton = "Creer une cartouche de Cigarette",
+	Recipe_OpenCigarettePack = "Ouvrir le paquet de Cigarette",
+	Recipe_OpenCigaretteCarton = "Ouvrir la cartouche de Cigarette",
 
-    /* Kefir */
-    Recipe_MakeKefirJar = "Creer un bocal de Kefir",
-    Recipe_FilterKefirJar = "Filtrer le Kefir",
-    Recipe_FilterKefirJarBleach = "Filtrer le Kefir",
+	/* Kefir */
+	Recipe_MakeKefirJar = "Creer un bocal de Kefir",
+	Recipe_FilterKefirJar = "Filtrer le Kefir",
+	Recipe_FilterKefirJarBleach = "Filtrer le Kefir",
 
-    /* Cidre */
-    Recipe_MakeCiderJar = "Creer un bocal de Cidre",
-    Recipe_FilterCiderJar = "Filtrer le Cidre",
+	/* Cidre */
+	Recipe_MakeCiderJar = "Creer un bocal de Cidre",
+	Recipe_FilterCiderJar = "Filtrer le Cidre",
 
-    /* Wild Wine */
-    Recipe_MakeWildWineJar = "Creer un bocal de Vin sauvage",
-    Recipe_FilterWildWineJar = "Filtrer le Vin sauvage",
+	/* Wild Wine */
+	Recipe_MakeWildWineJar = "Creer un bocal de Vin sauvage",
+	Recipe_FilterWildWineJar = "Filtrer le Vin sauvage",
 
-    Recipe_FilterVinegar = "Filtrer le vinaigre",
+	Recipe_FilterVinegar = "Filtrer le vinaigre",
 
-    /* Box of Jars */
-    Recipe_MakeBoxOfJars = "Creer un boite de bocaux",
+	/* Box of Jars */
+	Recipe_MakeBoxOfJars = "Creer un boite de bocaux",
 
-    /* Twig stack */
-    Recipe_MakeTenTwigsStack = "Creer un petit fagot de brindilles",
-    Recipe_MakeTwentyTwigsStack = "Creer un fagot de brindilles",
+	/* Twig stack */
+	Recipe_MakeTenTwigsStack = "Creer un petit fagot de brindilles",
+	Recipe_MakeTwentyTwigsStack = "Creer un fagot de brindilles",
 
-    Recipe_UnstackTwigs = "Delier les brindilles",
+	Recipe_UnstackTwigs = "Delier les brindilles",
 
-    /* Branch stack */
-    Recipe_MakeFiveBranchStack = "Creer un petit fagot de branches",
-    Recipe_MakeTenBranchStack = "Creer un fagot de branche",
+	/* Branch stack */
+	Recipe_MakeFiveBranchStack = "Creer un petit fagot de branches",
+	Recipe_MakeTenBranchStack = "Creer un fagot de branche",
 
-    Recipe_UnstackBranch = "Delier les Branches",
+	Recipe_UnstackBranch = "Delier les Branches",
 
-    /* Tailoring */
-    Recipe_MakeSheet = "Creer Drap",
-    Recipe_MakeTwine = "Creer Ficelle",
+	/* Tailoring */
+	Recipe_MakeSheet = "Creer Drap",
+	Recipe_MakeTwine = "Creer Ficelle",
 
-    /* Weapons */
-    Recipe_MakeBaseballBat = "Creer Batte de baseball",
+	/* Weapons */
+	Recipe_MakeBaseballBat = "Creer Batte de baseball",
 
-    /* Bushcraft */
-    Recipe_MakeCharcoal = "Creer du Charbon",
-    Recipe_MakeSheetPaper = "Dechirer le Calepin",
+	/* Bushcraft */
+	Recipe_MakeCharcoal = "Creer du Charbon",
+	Recipe_MakeSheetPaper = "Dechirer le Calepin",
 }

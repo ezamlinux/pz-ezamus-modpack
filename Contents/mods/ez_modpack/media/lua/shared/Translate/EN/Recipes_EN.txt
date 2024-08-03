@@ -1,51 +1,61 @@
 Recipe_EN = {
-    /* MISC */
-    Recipe_EmptyJar = "Empty Jar",
+	/* MISC */
+	Recipe_EmptyJar = "Empty Jar",
 
-    /* Cigarette */
-    Recipe_MakeCigarettePack = "Make Cigarette Pack",
-    Recipe_MakeCigaretteCarton = "Make Cigarette Carton",
-    Recipe_OpenCigarettePack = "Open Cigarette Pack",
-    Recipe_OpenCigaretteCarton = "Open Cigarette Carton",
+	/* Cigarette */
+	Recipe_MakeCigarettePack = "Make Cigarette Pack",
+	Recipe_MakeCigaretteCarton = "Make Cigarette Carton",
+	Recipe_OpenCigarettePack = "Open Cigarette Pack",
+	Recipe_OpenCigaretteCarton = "Open Cigarette Carton",
 
-    /* Kefir */
-    Recipe_MakeKefirJar = "Make Kefir Jar",
-    Recipe_FilterKefirJar = "Filter Kefir",
-    Recipe_FilterKefirJarBleach = "Filter Kefir",
+	/* Kefir */
+	Recipe_MakeKefirJar = "Make Kefir Jar",
+	Recipe_FilterKefirJar = "Filter Kefir",
+	Recipe_FilterKefirJarBleach = "Filter Kefir",
 
-    /* Cidre */
-    Recipe_MakeCiderJar = "Make Cider Jar",
-    Recipe_FilterCiderJar = "Filter Cider",
+	/* Cidre */
+	Recipe_MakeCiderJar = "Make Cider Jar",
+	Recipe_FilterCiderJar = "Filter Cider",
 
-    /* Wild Wine */
-    Recipe_MakeWildWineJar = "Make Wild Wine Jar",
-    Recipe_FilterWildWineJar = "Filter Wild Wine",
+	/* Wild Wine */
+	Recipe_MakeWildWineJar = "Make Wild Wine Jar",
+	Recipe_FilterWildWineJar = "Filter Wild Wine",
 
-    Recipe_FilterVinegar = "Filter Vinegar",
+	Recipe_FilterVinegar = "Filter Vinegar",
 
-    /* Box of Jars */
-    Recipe_MakeBoxOfJars = "Make Box of Jars",
+	/* Box of Jars */
+	Recipe_MakeBoxOfJars = "Make Box of Jars",
 
-    /* Twig stack */
-    Recipe_MakeTenTwigsStack = "Make Small Twigs Stack",
-    Recipe_MakeTwentyTwigsStack = "Make Twigs Stack",
+	/* Twig stack */
+	Recipe_MakeTenTwigsStack = "Make Small Twigs Stack",
+	Recipe_MakeTwentyTwigsStack = "Make Twigs Stack",
 
-    Recipe_UnstackTwigs = "Unstack Twigs",
+	Recipe_UnstackTwigs = "Unstack Twigs",
 
-    /* Branch stack */
-    Recipe_MakeFiveBranchStack = "Make Small Branch Stack",
-    Recipe_MakeTenBranchStack = "Make Branch Stack",
+	/* Branch stack */
+	Recipe_MakeFiveBranchStack = "Make Small Branch Stack",
+	Recipe_MakeTenBranchStack = "Make Branch Stack",
 
-    Recipe_UnstackBranch = "Unstack Branch",
+	Recipe_UnstackBranch = "Unstack Branch",
 
-    /* Tailoring */
-    Recipe_MakeSheet = "Make Sheet",
-    Recipe_MakeTwine = "Make Twine",
+	/* Tailoring */
+	Recipe_MakeSheet = "Make Sheet",
+	Recipe_MakeTwine = "Make Twine",
 
-    /* Weapons */
-    Recipe_MakeBaseballBat = "Make BaseBall Bat",
+	/* Weapons */
+	Recipe_MakeBaseballBat = "Make BaseBall Bat",
 
-    /* Bushcraft */
-    Recipe_MakeCharcoal = "Make Charcoal",
-    Recipe_MakeSheetPaper = "Rip Notebook",
+	/* Bushcraft */
+	Recipe_MakeCharcoal = "Make Charcoal",
+	Recipe_MakeSheetPaper = "Rip Notebook",
+
+	/* Clippy & magazine*/
+	Recipe_MakeCompleteFishingMag = "Clip fishing magazines",
+	Recipe_MakeCompleteMechanicgMag = "Clip mechanic magazines",
+	Recipe_MakeCompleteHuntingMag = "Clip Hunter magazines",
+	Recipe_MakeCompleteMetalworkMag = "Clip Metalwork magazines",
+	Recipe_MakeCompleteCookingMag = "Clip Good Cooking magazines",
+	Recipe_MakeCompleteElectronicMag = "Clip Electronics magazines",
+	Recipe_MakeCompleteEngineerMag = "Clip Engineer magazines",
+	Recipe_MakeCompleteRadioMag = "Clip Guerilla Radio",
 }
